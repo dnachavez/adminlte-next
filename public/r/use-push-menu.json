@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-push-menu",
+  "title": "usePushMenu",
+  "description": "Hook for sidebar push menu toggle with responsive 767px breakpoint handling.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/use-push-menu/hooks/use-push-menu.ts",
+      "content": "import { useState, useCallback, useEffect } from \"react\"\n\ninterface UsePushMenuOptions {\n  collapseScreenSize?: number\n  defaultCollapsed?: boolean\n}\n\nexport function usePushMenu(options: UsePushMenuOptions = {}) {\n  const { collapseScreenSize = 767, defaultCollapsed = false } = options\n  const [isCollapsed, setIsCollapsed] = useState(defaultCollapsed)\n  const [isMobileOpen, setIsMobileOpen] = useState(false)\n  const [isMobile, setIsMobile] = useState(false)\n\n  useEffect(() => {\n    const checkMobile = () => {\n      setIsMobile(window.innerWidth <= collapseScreenSize)\n    }\n    checkMobile()\n    window.addEventListener(\"resize\", checkMobile)\n    return () => window.removeEventListener(\"resize\", checkMobile)\n  }, [collapseScreenSize])\n\n  const toggle = useCallback(() => {\n    if (isMobile) {\n      setIsMobileOpen(prev => !prev)\n    } else {\n      setIsCollapsed(prev => !prev)\n    }\n  }, [isMobile])\n\n  const open = useCallback(() => {\n    if (isMobile) {\n      setIsMobileOpen(true)\n    } else {\n      setIsCollapsed(false)\n    }\n  }, [isMobile])\n\n  const close = useCallback(() => {\n    if (isMobile) {\n      setIsMobileOpen(false)\n    } else {\n      setIsCollapsed(true)\n    }\n  }, [isMobile])\n\n  const closeMobile = useCallback(() => {\n    if (isMobile) {\n      setIsMobileOpen(false)\n    }\n  }, [isMobile])\n\n  return {\n    isCollapsed,\n    isMobileOpen,\n    isMobile,\n    toggle,\n    open,\n    close,\n    closeMobile,\n  }\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

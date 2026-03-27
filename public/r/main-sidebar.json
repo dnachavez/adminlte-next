@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "main-sidebar",
+  "title": "Main Sidebar",
+  "description": "Left sidebar with 230px width, themed colors, collapse/expand transitions, and mobile responsive behavior.",
+  "registryDependencies": [
+    "adminlte-theme",
+    "sidebar-menu",
+    "sidebar-user-panel",
+    "sidebar-search-form",
+    "use-push-menu"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/main-sidebar/components/main-sidebar.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface MainSidebarProps extends React.HTMLAttributes<HTMLElement> {\n  collapsed?: boolean\n  mobileOpen?: boolean\n  isFixed?: boolean\n}\n\nconst MainSidebar = React.forwardRef<HTMLElement, MainSidebarProps>(\n  (\n    {\n      className,\n      collapsed = false,\n      mobileOpen = false,\n      isFixed = false,\n      children,\n      ...props\n    },\n    ref\n  ) => {\n    return (\n      <aside\n        ref={ref}\n        className={cn(\n          \"left-0 top-0 pt-[50px] min-h-full z-[810]\",\n          \"bg-[var(--adminlte-skin-sidebar-bg)]\",\n          \"transition-[transform,width] duration-300 ease-in-out\",\n          isFixed ? \"fixed\" : \"absolute\",\n          collapsed ? \"w-[50px]\" : \"w-[230px]\",\n          // Mobile: hidden by default, shown when mobileOpen\n          \"max-md:fixed max-md:z-[1035]\",\n          !mobileOpen && \"max-md:-translate-x-[230px]\",\n          mobileOpen && \"max-md:translate-x-0\",\n          className\n        )}\n        {...props}\n      >\n        <div\n          className={cn(\n            \"h-full overflow-y-auto overflow-x-hidden\",\n            collapsed && \"overflow-visible\"\n          )}\n        >\n          {children}\n        </div>\n      </aside>\n    )\n  }\n)\nMainSidebar.displayName = \"MainSidebar\"\n\nexport { MainSidebar }\nexport type { MainSidebarProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-direct-chat",
+  "title": "useDirectChat",
+  "description": "Hook for toggling direct chat contacts panel visibility.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/use-direct-chat/hooks/use-direct-chat.ts",
+      "content": "import { useState, useCallback } from \"react\"\n\nexport function useDirectChat(defaultOpen = false) {\n  const [isContactsOpen, setIsContactsOpen] = useState(defaultOpen)\n\n  const toggleContacts = useCallback(() => {\n    setIsContactsOpen(prev => !prev)\n  }, [])\n\n  const openContacts = useCallback(() => setIsContactsOpen(true), [])\n  const closeContacts = useCallback(() => setIsContactsOpen(false), [])\n\n  return { isContactsOpen, toggleContacts, openContacts, closeContacts }\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dashboard-overview",
+  "title": "Dashboard Overview",
+  "description": "Example dashboard page layout with stats row, main content area, side content, and bottom section.",
+  "registryDependencies": [
+    "adminlte-theme",
+    "admin-layout",
+    "box",
+    "small-box",
+    "info-box",
+    "timeline",
+    "todo-list",
+    "direct-chat",
+    "adminlte-chart-placeholder",
+    "adminlte-progress"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/dashboard-overview/blocks/dashboard-overview.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface DashboardOverviewProps extends React.HTMLAttributes<HTMLDivElement> {\n  statsRow?: React.ReactNode\n  mainContent?: React.ReactNode\n  sideContent?: React.ReactNode\n  bottomRow?: React.ReactNode\n}\n\nfunction DashboardOverview({\n  className,\n  statsRow,\n  mainContent,\n  sideContent,\n  bottomRow,\n  children,\n  ...props\n}: DashboardOverviewProps) {\n  return (\n    <div className={cn(\"\", className)} {...props}>\n      {/* Content Header */}\n      <section className=\"p-[15px_15px_0_15px]\">\n        <div className=\"flex items-center justify-between\">\n          <h1 className=\"text-[24px] m-0 font-normal\">Dashboard</h1>\n        </div>\n      </section>\n\n      {/* Stats Row */}\n      {statsRow && (\n        <section className=\"px-[15px] pt-[15px]\">{statsRow}</section>\n      )}\n\n      {/* Main Content */}\n      <section className=\"p-[15px]\">\n        {children || (\n          <div className=\"flex gap-[15px] flex-col lg:flex-row\">\n            {mainContent && (\n              <div className=\"flex-1\">{mainContent}</div>\n            )}\n            {sideContent && (\n              <div className=\"w-full lg:w-[350px] flex-shrink-0\">\n                {sideContent}\n              </div>\n            )}\n          </div>\n        )}\n      </section>\n\n      {/* Bottom Row */}\n      {bottomRow && (\n        <section className=\"px-[15px] pb-[15px]\">{bottomRow}</section>\n      )}\n    </div>\n  )\n}\n\nexport { DashboardOverview }\nexport type { DashboardOverviewProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}

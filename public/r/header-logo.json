@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "header-logo",
+  "title": "Header Logo",
+  "description": "Logo component for the main header with full and mini (collapsed) variants.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/header-logo/components/header-logo.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface HeaderLogoProps extends React.HTMLAttributes<HTMLAnchorElement> {\n  logoFull: React.ReactNode\n  logoMini: React.ReactNode\n  collapsed: boolean\n  href: string\n}\n\nconst HeaderLogo = React.forwardRef<HTMLAnchorElement, HeaderLogoProps>(\n  ({ className, logoFull, logoMini, collapsed, href, ...props }, ref) => {\n    return (\n      <a\n        ref={ref}\n        href={href}\n        className={cn(\n          \"flex items-center h-[50px] transition-[width] duration-300 no-underline\",\n          \"bg-[var(--adminlte-skin-logo-bg)] text-[var(--adminlte-skin-logo-color)]\",\n          \"hover:bg-[var(--adminlte-skin-logo-hover-bg)]\",\n          collapsed ? \"w-[50px]\" : \"w-[230px]\",\n          className\n        )}\n        {...props}\n      >\n        {collapsed ? (\n          <span className=\"text-[18px] font-bold text-center w-[50px]\">\n            {logoMini}\n          </span>\n        ) : (\n          <span className=\"text-[20px] font-bold pl-[15px]\">\n            {logoFull}\n          </span>\n        )}\n      </a>\n    )\n  }\n)\nHeaderLogo.displayName = \"HeaderLogo\"\n\nexport { HeaderLogo }\nexport type { HeaderLogoProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

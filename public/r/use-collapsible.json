@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-collapsible",
+  "title": "useCollapsible",
+  "description": "Hook for collapsible box widget with CSS max-height animation (500ms slide toggle).",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/use-collapsible/hooks/use-collapsible.ts",
+      "content": "import { useState, useRef, useCallback } from \"react\"\n\nexport function useCollapsible(initialCollapsed = false) {\n  const [isCollapsed, setIsCollapsed] = useState(initialCollapsed)\n  const contentRef = useRef<HTMLDivElement>(null)\n\n  const toggle = useCallback(() => {\n    setIsCollapsed(prev => !prev)\n  }, [])\n\n  const collapse = useCallback(() => setIsCollapsed(true), [])\n  const expand = useCallback(() => setIsCollapsed(false), [])\n\n  return { isCollapsed, toggle, collapse, expand, contentRef }\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

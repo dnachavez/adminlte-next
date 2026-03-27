@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "main-footer",
+  "title": "Main Footer",
+  "description": "Page footer with white background, border-top, and left/right content slots.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/main-footer/components/main-footer.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface MainFooterProps extends React.HTMLAttributes<HTMLElement> {\n  leftContent?: React.ReactNode\n  rightContent?: React.ReactNode\n}\n\nconst MainFooter = React.forwardRef<HTMLElement, MainFooterProps>(\n  ({ className, leftContent, rightContent, children, ...props }, ref) => {\n    return (\n      <footer\n        ref={ref}\n        className={cn(\n          \"bg-white p-[15px] text-[#444] border-t border-[#d2d6de]\",\n          \"transition-[margin-left] duration-300\",\n          className\n        )}\n        {...props}\n      >\n        {(leftContent || rightContent) ? (\n          <div className=\"flex justify-between items-center\">\n            {leftContent && <div>{leftContent}</div>}\n            {rightContent && <div className=\"ml-auto\">{rightContent}</div>}\n          </div>\n        ) : (\n          children\n        )}\n      </footer>\n    )\n  }\n)\nMainFooter.displayName = \"MainFooter\"\n\nexport { MainFooter }\nexport type { MainFooterProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

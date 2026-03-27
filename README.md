@@ -7,13 +7,15 @@ A complete [Shadcn UI custom registry](https://ui.shadcn.com/docs/registry) that
 Add any component to your Next.js / Shadcn project:
 
 ```bash
-npx shadcn add https://raw.githubusercontent.com/dnachavez/adminlte-next/master/registry.json admin-layout
+npx shadcn add https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/admin-layout.json
 ```
 
 Or add individual pieces:
 
 ```bash
-npx shadcn add https://raw.githubusercontent.com/dnachavez/adminlte-next/master/registry.json box small-box info-box
+npx shadcn add https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/box.json \
+  https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/small-box.json \
+  https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/info-box.json
 ```
 
 ## What's Inside

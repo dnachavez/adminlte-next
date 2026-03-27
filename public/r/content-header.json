@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "content-header",
+  "title": "Content Header",
+  "description": "Page title section with h1 heading, subtitle, and breadcrumb navigation.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/content-header/components/content-header.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface Breadcrumb {\n  label: string\n  href?: string\n  active?: boolean\n}\n\ninterface ContentHeaderProps extends React.HTMLAttributes<HTMLElement> {\n  title: string\n  subtitle?: string\n  breadcrumbs?: Breadcrumb[]\n}\n\nconst ContentHeader = React.forwardRef<HTMLElement, ContentHeaderProps>(\n  ({ className, title, subtitle, breadcrumbs = [], ...props }, ref) => {\n    return (\n      <section\n        ref={ref}\n        className={cn(\"px-[15px] pt-[15px] pb-0\", className)}\n        {...props}\n      >\n        <div className=\"flex items-center justify-between flex-wrap gap-[10px]\">\n          <div>\n            <h1 className=\"text-[24px] m-0 inline-block font-normal\">\n              {title}\n              {subtitle && (\n                <small className=\"text-[15px] text-[#666] ml-[10px]\">\n                  {subtitle}\n                </small>\n              )}\n            </h1>\n          </div>\n\n          {breadcrumbs.length > 0 && (\n            <ol className=\"flex items-center list-none m-0 p-0 text-[14px]\">\n              {breadcrumbs.map((crumb, index) => (\n                <li\n                  key={index}\n                  className={cn(\n                    \"flex items-center\",\n                    crumb.active\n                      ? \"text-[#444]\"\n                      : \"text-[#3c8dbc]\"\n                  )}\n                >\n                  {index > 0 && (\n                    <span className=\"mx-[5px] text-[#999]\">/</span>\n                  )}\n                  {crumb.active || !crumb.href ? (\n                    <span>{crumb.label}</span>\n                  ) : (\n                    <a\n                      href={crumb.href}\n                      className=\"text-[#3c8dbc] no-underline hover:underline\"\n                    >\n                      {crumb.label}\n                    </a>\n                  )}\n                </li>\n              ))}\n            </ol>\n          )}\n        </div>\n      </section>\n    )\n  }\n)\nContentHeader.displayName = \"ContentHeader\"\n\nexport { ContentHeader }\nexport type { ContentHeaderProps, Breadcrumb }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

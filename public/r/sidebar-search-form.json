@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sidebar-search-form",
+  "title": "Sidebar Search Form",
+  "description": "Search form for the sidebar with themed input and button.",
+  "registryDependencies": [
+    "adminlte-theme",
+    "adminlte-form-control"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/sidebar-search-form/components/sidebar-search-form.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { useState, useCallback } from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface SidebarSearchFormProps extends React.HTMLAttributes<HTMLFormElement> {\n  placeholder?: string\n  onSearch?: (value: string) => void\n}\n\nconst SidebarSearchForm = React.forwardRef<HTMLFormElement, SidebarSearchFormProps>(\n  ({ className, placeholder = \"Search...\", onSearch, ...props }, ref) => {\n    const [value, setValue] = useState(\"\")\n\n    const handleSubmit = useCallback(\n      (e: React.FormEvent<HTMLFormElement>) => {\n        e.preventDefault()\n        if (onSearch) {\n          onSearch(value)\n        }\n      },\n      [onSearch, value]\n    )\n\n    const handleChange = useCallback(\n      (e: React.ChangeEvent<HTMLInputElement>) => {\n        setValue(e.target.value)\n      },\n      []\n    )\n\n    return (\n      <form\n        ref={ref}\n        onSubmit={handleSubmit}\n        className={cn(\"mx-[10px] my-[10px] rounded-[3px]\", className)}\n        {...props}\n      >\n        <div className=\"flex rounded-[3px] overflow-hidden\">\n          <input\n            type=\"text\"\n            value={value}\n            onChange={handleChange}\n            placeholder={placeholder}\n            className={cn(\n              \"flex-1 h-[35px] px-[10px] border-0 outline-none\",\n              \"bg-[var(--adminlte-skin-sidebar-bg,#374850)] text-white\",\n              \"placeholder:text-white/60\"\n            )}\n          />\n          <button\n            type=\"submit\"\n            className={cn(\n              \"h-[35px] w-[35px] border-0 cursor-pointer flex items-center justify-center shrink-0\",\n              \"bg-[var(--adminlte-skin-sidebar-bg,#374850)] text-white\",\n              \"hover:opacity-80 transition-opacity\"\n            )}\n            aria-label=\"Search\"\n          >\n            <svg\n              xmlns=\"http://www.w3.org/2000/svg\"\n              viewBox=\"0 0 24 24\"\n              fill=\"none\"\n              stroke=\"currentColor\"\n              strokeWidth=\"2\"\n              strokeLinecap=\"round\"\n              strokeLinejoin=\"round\"\n              className=\"h-[14px] w-[14px]\"\n            >\n              <circle cx=\"11\" cy=\"11\" r=\"8\" />\n              <line x1=\"21\" y1=\"21\" x2=\"16.65\" y2=\"16.65\" />\n            </svg>\n          </button>\n        </div>\n      </form>\n    )\n  }\n)\nSidebarSearchForm.displayName = \"SidebarSearchForm\"\n\nexport { SidebarSearchForm }\nexport type { SidebarSearchFormProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

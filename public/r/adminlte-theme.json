@@ -1,0 +1,49 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "adminlte-theme",
+  "title": "AdminLTE Theme",
+  "description": "AdminLTE 2.4.2 color system with 16 named colors, CSS custom properties for runtime skin switching, layout constants, and utility functions.",
+  "dependencies": [
+    "clsx",
+    "tailwind-merge"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/adminlte-theme/adminlte-theme.css",
+      "content": "@layer base {\n  :root {\n    /* AdminLTE Color Palette */\n    --adminlte-aqua: #00c0ef;\n    --adminlte-aqua-active: #00a7d0;\n    --adminlte-red: #dd4b39;\n    --adminlte-red-active: #d33724;\n    --adminlte-green: #00a65a;\n    --adminlte-green-active: #008d4c;\n    --adminlte-yellow: #f39c12;\n    --adminlte-yellow-active: #db8b0b;\n    --adminlte-blue: #0073b7;\n    --adminlte-blue-active: #005384;\n    --adminlte-light-blue: #3c8dbc;\n    --adminlte-light-blue-active: #357ca5;\n    --adminlte-navy: #001f3f;\n    --adminlte-navy-active: #001a35;\n    --adminlte-teal: #39cccc;\n    --adminlte-teal-active: #30bbbb;\n    --adminlte-olive: #3d9970;\n    --adminlte-olive-active: #368763;\n    --adminlte-lime: #01ff70;\n    --adminlte-lime-active: #00e765;\n    --adminlte-orange: #ff851b;\n    --adminlte-orange-active: #ff7701;\n    --adminlte-fuchsia: #f012be;\n    --adminlte-fuchsia-active: #db0ead;\n    --adminlte-purple: #605ca8;\n    --adminlte-purple-active: #555299;\n    --adminlte-maroon: #d81b60;\n    --adminlte-maroon-active: #ca195a;\n    --adminlte-black: #111111;\n    --adminlte-black-active: #000000;\n    --adminlte-gray: #d2d6de;\n    --adminlte-gray-active: #b5bbc8;\n\n    /* Layout */\n    --adminlte-sidebar-width: 230px;\n    --adminlte-sidebar-mini-width: 50px;\n    --adminlte-navbar-height: 50px;\n    --adminlte-content-bg: #ecf0f5;\n    --adminlte-footer-bg: #ffffff;\n    --adminlte-footer-border: #d2d6de;\n    --adminlte-footer-color: #444444;\n    --adminlte-body-font-size: 14px;\n\n    /* Box Widget */\n    --adminlte-box-border-radius: 3px;\n    --adminlte-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n    --adminlte-box-border-top-width: 3px;\n    --adminlte-box-padding: 10px;\n    --adminlte-box-margin-bottom: 20px;\n    --adminlte-box-header-border: #f4f4f4;\n    --adminlte-box-bg: #ffffff;\n    --adminlte-box-default-border: #d2d6de;\n    --adminlte-box-primary-border: #3c8dbc;\n    --adminlte-box-info-border: #00c0ef;\n    --adminlte-box-success-border: #00a65a;\n    --adminlte-box-warning-border: #f39c12;\n    --adminlte-box-danger-border: #dd4b39;\n\n    /* Skin Variables (defaults to skin-blue) */\n    --adminlte-skin-navbar-bg: #3c8dbc;\n    --adminlte-skin-navbar-color: #ffffff;\n    --adminlte-skin-logo-bg: #367fa9;\n    --adminlte-skin-logo-color: #ffffff;\n    --adminlte-skin-logo-hover-bg: #357ca5;\n    --adminlte-skin-sidebar-bg: #222d32;\n    --adminlte-skin-sidebar-color: #b8c7ce;\n    --adminlte-skin-sidebar-hover-bg: #1e282c;\n    --adminlte-skin-sidebar-hover-color: #ffffff;\n    --adminlte-skin-sidebar-active-border: #3c8dbc;\n    --adminlte-skin-sidebar-active-bg: #1e282c;\n    --adminlte-skin-sidebar-active-color: #ffffff;\n    --adminlte-skin-sidebar-submenu-bg: #2c3b41;\n    --adminlte-skin-sidebar-submenu-color: #8aa4af;\n    --adminlte-skin-sidebar-submenu-hover-color: #ffffff;\n    --adminlte-skin-sidebar-header-bg: #1a2226;\n    --adminlte-skin-sidebar-header-color: #4b646f;\n    --adminlte-skin-user-panel-color: #ffffff;\n\n    /* Transitions */\n    --adminlte-transition-speed: 0.3s;\n    --adminlte-animation-speed: 500ms;\n    --adminlte-transition-fn: ease-in-out;\n  }\n}\n",
+      "type": "registry:style"
+    },
+    {
+      "path": "registry/new-york/adminlte-theme/lib/colors.ts",
+      "content": "export const adminlteColors = {\n  aqua: \"#00c0ef\",\n  \"aqua-active\": \"#00a7d0\",\n  red: \"#dd4b39\",\n  \"red-active\": \"#d33724\",\n  green: \"#00a65a\",\n  \"green-active\": \"#008d4c\",\n  yellow: \"#f39c12\",\n  \"yellow-active\": \"#db8b0b\",\n  blue: \"#0073b7\",\n  \"blue-active\": \"#005384\",\n  \"light-blue\": \"#3c8dbc\",\n  \"light-blue-active\": \"#357ca5\",\n  navy: \"#001f3f\",\n  \"navy-active\": \"#001a35\",\n  teal: \"#39cccc\",\n  \"teal-active\": \"#30bbbb\",\n  olive: \"#3d9970\",\n  \"olive-active\": \"#368763\",\n  lime: \"#01ff70\",\n  \"lime-active\": \"#00e765\",\n  orange: \"#ff851b\",\n  \"orange-active\": \"#ff7701\",\n  fuchsia: \"#f012be\",\n  \"fuchsia-active\": \"#db0ead\",\n  purple: \"#605ca8\",\n  \"purple-active\": \"#555299\",\n  maroon: \"#d81b60\",\n  \"maroon-active\": \"#ca195a\",\n  black: \"#111111\",\n  \"black-active\": \"#000000\",\n  gray: \"#d2d6de\",\n  \"gray-active\": \"#b5bbc8\",\n} as const\n\nexport type AdminLTEColor =\n  | \"aqua\"\n  | \"red\"\n  | \"green\"\n  | \"yellow\"\n  | \"blue\"\n  | \"light-blue\"\n  | \"navy\"\n  | \"teal\"\n  | \"olive\"\n  | \"lime\"\n  | \"orange\"\n  | \"fuchsia\"\n  | \"purple\"\n  | \"maroon\"\n  | \"black\"\n  | \"gray\"\n\nexport type BoxVariant =\n  | \"default\"\n  | \"primary\"\n  | \"info\"\n  | \"success\"\n  | \"warning\"\n  | \"danger\"\n\nexport const boxVariantColors: Record<BoxVariant, string> = {\n  default: \"#d2d6de\",\n  primary: \"#3c8dbc\",\n  info: \"#00c0ef\",\n  success: \"#00a65a\",\n  warning: \"#f39c12\",\n  danger: \"#dd4b39\",\n}\n\nexport const bgColorMap: Record<AdminLTEColor, string> = {\n  aqua: \"bg-[#00c0ef] text-white\",\n  red: \"bg-[#dd4b39] text-white\",\n  green: \"bg-[#00a65a] text-white\",\n  yellow: \"bg-[#f39c12] text-white\",\n  blue: \"bg-[#0073b7] text-white\",\n  \"light-blue\": \"bg-[#3c8dbc] text-white\",\n  navy: \"bg-[#001f3f] text-white\",\n  teal: \"bg-[#39cccc] text-white\",\n  olive: \"bg-[#3d9970] text-white\",\n  lime: \"bg-[#01ff70] text-[#444]\",\n  orange: \"bg-[#ff851b] text-white\",\n  fuchsia: \"bg-[#f012be] text-white\",\n  purple: \"bg-[#605ca8] text-white\",\n  maroon: \"bg-[#d81b60] text-white\",\n  black: \"bg-[#111] text-white\",\n  gray: \"bg-[#d2d6de] text-[#444]\",\n}\n\nexport const progressBarColorMap: Record<string, string> = {\n  aqua: \"bg-[#00c0ef]\",\n  red: \"bg-[#dd4b39]\",\n  green: \"bg-[#00a65a]\",\n  yellow: \"bg-[#f39c12]\",\n  blue: \"bg-[#3c8dbc]\",\n  purple: \"bg-[#605ca8]\",\n}\n",
+      "type": "registry:lib"
+    },
+    {
+      "path": "registry/new-york/adminlte-theme/lib/cn.ts",
+      "content": "import { clsx, type ClassValue } from \"clsx\"\nimport { twMerge } from \"tailwind-merge\"\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs))\n}\n",
+      "type": "registry:lib"
+    }
+  ],
+  "cssVars": {
+    "light": {
+      "adminlte-aqua": "#00c0ef",
+      "adminlte-red": "#dd4b39",
+      "adminlte-green": "#00a65a",
+      "adminlte-yellow": "#f39c12",
+      "adminlte-blue": "#0073b7",
+      "adminlte-light-blue": "#3c8dbc",
+      "adminlte-navy": "#001f3f",
+      "adminlte-teal": "#39cccc",
+      "adminlte-olive": "#3d9970",
+      "adminlte-lime": "#01ff70",
+      "adminlte-orange": "#ff851b",
+      "adminlte-fuchsia": "#f012be",
+      "adminlte-purple": "#605ca8",
+      "adminlte-maroon": "#d81b60",
+      "adminlte-black": "#111111",
+      "adminlte-gray": "#d2d6de",
+      "adminlte-content-bg": "#ecf0f5"
+    }
+  },
+  "type": "registry:style"
+}

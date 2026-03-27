@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-box-loading",
+  "title": "useBoxLoading",
+  "description": "Hook for box loading overlay state with spinner toggle.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/use-box-loading/hooks/use-box-loading.ts",
+      "content": "import { useState, useCallback } from \"react\"\n\nexport function useBoxLoading(initialLoading = false) {\n  const [isLoading, setIsLoading] = useState(initialLoading)\n\n  const startLoading = useCallback(() => setIsLoading(true), [])\n  const stopLoading = useCallback(() => setIsLoading(false), [])\n  const toggleLoading = useCallback(() => setIsLoading(prev => !prev), [])\n\n  return { isLoading, startLoading, stopLoading, toggleLoading }\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

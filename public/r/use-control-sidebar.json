@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-control-sidebar",
+  "title": "useControlSidebar",
+  "description": "Hook for right control sidebar slide toggle.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/use-control-sidebar/hooks/use-control-sidebar.ts",
+      "content": "import { useState, useCallback } from \"react\"\n\ninterface UseControlSidebarOptions {\n  slide?: boolean\n  defaultOpen?: boolean\n}\n\nexport function useControlSidebar(options: UseControlSidebarOptions = {}) {\n  const { slide = true, defaultOpen = false } = options\n  const [isOpen, setIsOpen] = useState(defaultOpen)\n\n  const toggle = useCallback(() => setIsOpen(prev => !prev), [])\n  const open = useCallback(() => setIsOpen(true), [])\n  const close = useCallback(() => setIsOpen(false), [])\n\n  return { isOpen, slide, toggle, open, close }\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

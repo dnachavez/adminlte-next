@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "adminlte-products-list",
+  "title": "AdminLTE Products List",
+  "description": "Vertical list of products with image, name, description, and label for recently added products.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/adminlte-products-list/ui/adminlte-products-list.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface ProductItem {\n  id: string\n  imageUrl: string\n  name: string\n  description: string\n  label?: React.ReactNode\n  href?: string\n}\n\ninterface AdminLTEProductsListProps\n  extends React.HTMLAttributes<HTMLUListElement> {\n  items: ProductItem[]\n}\n\nconst AdminLTEProductsList = React.forwardRef<\n  HTMLUListElement,\n  AdminLTEProductsListProps\n>(({ className, items, ...props }, ref) => {\n  return (\n    <ul\n      ref={ref}\n      className={cn(\"list-none m-0 p-0\", className)}\n      {...props}\n    >\n      {items.map((item) => (\n        <li\n          key={item.id}\n          className=\"py-[10px] px-0 border-b border-b-[#f4f4f4] last:border-b-0\"\n        >\n          <a\n            href={item.href || \"#\"}\n            className=\"flex items-start gap-[10px] text-[#333] no-underline hover:text-[#999]\"\n          >\n            <img\n              src={item.imageUrl}\n              alt={item.name}\n              className=\"w-[50px] h-[50px] rounded-[3px] object-cover flex-shrink-0\"\n            />\n            <div className=\"flex-1 min-w-0\">\n              <div className=\"flex justify-between items-start\">\n                <span className=\"text-[14px] font-semibold block truncate\">\n                  {item.name}\n                </span>\n                {item.label && <span className=\"ml-[5px]\">{item.label}</span>}\n              </div>\n              <span className=\"text-[12px] text-[#999] block\">\n                {item.description}\n              </span>\n            </div>\n          </a>\n        </li>\n      ))}\n    </ul>\n  )\n})\nAdminLTEProductsList.displayName = \"AdminLTEProductsList\"\n\nexport { AdminLTEProductsList }\nexport type { AdminLTEProductsListProps, ProductItem }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

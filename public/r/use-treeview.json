@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-treeview",
+  "title": "useTreeview",
+  "description": "Hook for accordion treeview menu with expand/collapse animation.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/use-treeview/hooks/use-treeview.ts",
+      "content": "import { useState, useCallback } from \"react\"\n\ninterface UseTreeviewOptions {\n  accordion?: boolean\n  defaultOpenItems?: string[]\n}\n\nexport function useTreeview(options: UseTreeviewOptions = {}) {\n  const { accordion = true, defaultOpenItems = [] } = options\n  const [openItems, setOpenItems] = useState<Set<string>>(\n    new Set(defaultOpenItems)\n  )\n\n  const isOpen = useCallback(\n    (itemId: string) => openItems.has(itemId),\n    [openItems]\n  )\n\n  const toggle = useCallback(\n    (itemId: string, parentId?: string) => {\n      setOpenItems(prev => {\n        const next = new Set(prev)\n        if (next.has(itemId)) {\n          next.delete(itemId)\n        } else {\n          if (accordion && parentId) {\n            // Close siblings at same level - remove items that share the same parent\n            for (const openId of prev) {\n              if (openId !== itemId && openId.startsWith(parentId)) {\n                next.delete(openId)\n              }\n            }\n          } else if (accordion) {\n            next.clear()\n          }\n          next.add(itemId)\n        }\n        return next\n      })\n    },\n    [accordion]\n  )\n\n  const expand = useCallback((itemId: string) => {\n    setOpenItems(prev => new Set(prev).add(itemId))\n  }, [])\n\n  const collapse = useCallback((itemId: string) => {\n    setOpenItems(prev => {\n      const next = new Set(prev)\n      next.delete(itemId)\n      return next\n    })\n  }, [])\n\n  const collapseAll = useCallback(() => {\n    setOpenItems(new Set())\n  }, [])\n\n  return { openItems, isOpen, toggle, expand, collapse, collapseAll }\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

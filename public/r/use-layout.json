@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-layout",
+  "title": "useLayout",
+  "description": "Hook for calculating content wrapper min-height based on viewport, header, footer, and sidebar.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/use-layout/hooks/use-layout.ts",
+      "content": "import { useState, useEffect, useCallback, useRef } from \"react\"\n\ninterface UseLayoutOptions {\n  isFixed?: boolean\n  headerHeight?: number\n  footerHeight?: number\n}\n\nexport function useLayout(options: UseLayoutOptions = {}) {\n  const { isFixed = false, headerHeight = 50 } = options\n  const [contentMinHeight, setContentMinHeight] = useState<number>(0)\n  const footerRef = useRef<HTMLElement>(null)\n  const sidebarRef = useRef<HTMLElement>(null)\n\n  const calculateHeight = useCallback(() => {\n    const windowHeight = window.innerHeight\n    const fHeight = footerRef.current?.offsetHeight ?? 0\n    const sHeight = sidebarRef.current?.scrollHeight ?? 0\n\n    if (isFixed) {\n      setContentMinHeight(windowHeight - fHeight)\n    } else {\n      const neg = headerHeight + fHeight\n      if (windowHeight >= sHeight) {\n        setContentMinHeight(windowHeight - neg)\n      } else {\n        setContentMinHeight(sHeight)\n      }\n    }\n  }, [isFixed, headerHeight])\n\n  useEffect(() => {\n    calculateHeight()\n    window.addEventListener(\"resize\", calculateHeight)\n    return () => window.removeEventListener(\"resize\", calculateHeight)\n  }, [calculateHeight])\n\n  return { contentMinHeight, footerRef, sidebarRef, recalculate: calculateHeight }\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

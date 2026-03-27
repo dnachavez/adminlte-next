@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "content-wrapper",
+  "title": "Content Wrapper",
+  "description": "Main content area with #ecf0f5 background, margin-left offset for sidebar, and transition animations.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/content-wrapper/components/content-wrapper.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface ContentWrapperProps extends React.HTMLAttributes<HTMLDivElement> {\n  collapsed?: boolean\n}\n\nconst ContentWrapper = React.forwardRef<HTMLDivElement, ContentWrapperProps>(\n  ({ className, collapsed = false, children, style, ...props }, ref) => {\n    return (\n      <div\n        ref={ref}\n        className={cn(\n          \"min-h-full bg-[#ecf0f5] z-[800]\",\n          \"transition-[transform,margin] duration-300 ease-in-out\",\n          collapsed ? \"ml-[50px]\" : \"ml-[230px]\",\n          \"max-md:ml-0\",\n          className\n        )}\n        style={style}\n        {...props}\n      >\n        {children}\n      </div>\n    )\n  }\n)\nContentWrapper.displayName = \"ContentWrapper\"\n\nexport { ContentWrapper }\nexport type { ContentWrapperProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

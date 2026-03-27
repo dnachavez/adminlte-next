@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "adminlte-chart-placeholder",
+  "title": "AdminLTE Chart Placeholder",
+  "description": "Chart container placeholder for line, area, bar, pie, and donut charts with configurable height.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/adminlte-chart-placeholder/ui/adminlte-chart-placeholder.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ntype ChartType = \"line\" | \"area\" | \"bar\" | \"pie\" | \"donut\"\n\ninterface AdminLTEChartPlaceholderProps\n  extends React.HTMLAttributes<HTMLDivElement> {\n  type?: ChartType\n  height?: number | string\n  chartId?: string\n  children?: React.ReactNode\n}\n\nconst AdminLTEChartPlaceholder = React.forwardRef<\n  HTMLDivElement,\n  AdminLTEChartPlaceholderProps\n>(\n  (\n    { className, type = \"line\", height = 250, chartId, children, ...props },\n    ref\n  ) => {\n    return (\n      <div\n        ref={ref}\n        id={chartId}\n        className={cn(\"relative w-full\", className)}\n        style={{ height: typeof height === \"number\" ? `${height}px` : height }}\n        data-chart-type={type}\n        {...props}\n      >\n        {children || (\n          <div className=\"absolute inset-0 flex items-center justify-center bg-[#f9f9f9] rounded-[3px] border border-dashed border-[#ddd]\">\n            <span className=\"text-[#999] text-[14px]\">\n              {type.charAt(0).toUpperCase() + type.slice(1)} Chart\n            </span>\n          </div>\n        )}\n      </div>\n    )\n  }\n)\nAdminLTEChartPlaceholder.displayName = \"AdminLTEChartPlaceholder\"\n\nexport { AdminLTEChartPlaceholder }\nexport type { AdminLTEChartPlaceholderProps, ChartType }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

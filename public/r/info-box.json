@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "info-box",
+  "title": "Info Box",
+  "description": "Information display widget with colored icon area, text label, number value, and optional progress bar.",
+  "registryDependencies": [
+    "adminlte-theme",
+    "adminlte-progress"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/info-box/components/info-box.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\nimport {\n  type AdminLTEColor,\n  bgColorMap,\n} from \"@/registry/new-york/adminlte-theme/lib/colors\"\n\ninterface InfoBoxProps extends React.HTMLAttributes<HTMLDivElement> {\n  color?: AdminLTEColor\n  icon?: React.ReactNode\n  text?: string\n  number?: string | number\n  progress?: number\n  progressDescription?: string\n}\n\nconst InfoBox = React.forwardRef<HTMLDivElement, InfoBoxProps>(\n  (\n    {\n      className,\n      color = \"aqua\",\n      icon,\n      text,\n      number: numberValue,\n      progress,\n      progressDescription,\n      ...props\n    },\n    ref\n  ) => {\n    const clampedProgress =\n      progress !== undefined ? Math.max(0, Math.min(100, progress)) : undefined\n\n    return (\n      <div\n        ref={ref}\n        className={cn(\n          \"flex min-h-[90px] mb-[15px] rounded-[2px] bg-white\",\n          className\n        )}\n        style={{ boxShadow: \"0 1px 1px rgba(0,0,0,0.1)\" }}\n        {...props}\n      >\n        {/* Icon area */}\n        <div\n          className={cn(\n            \"flex w-[90px] h-[90px] items-center justify-center text-[45px] leading-[90px]\",\n            bgColorMap[color]\n          )}\n        >\n          {icon}\n        </div>\n\n        {/* Content area */}\n        <div className=\"flex-1 p-[5px_10px]\">\n          <span className=\"block text-[14px] font-bold uppercase whitespace-nowrap overflow-hidden text-ellipsis\">\n            {text}\n          </span>\n          <span className=\"block text-[18px] font-bold\">\n            {numberValue}\n          </span>\n\n          {/* Optional progress bar */}\n          {clampedProgress !== undefined && (\n            <div className=\"mt-[5px]\">\n              <div className=\"h-[3px] w-full bg-black/20 rounded-[1px] overflow-hidden\">\n                <div\n                  className=\"h-full bg-white transition-[width] duration-500\"\n                  style={{ width: `${clampedProgress}%` }}\n                  role=\"progressbar\"\n                  aria-valuenow={clampedProgress}\n                  aria-valuemin={0}\n                  aria-valuemax={100}\n                />\n              </div>\n              {progressDescription && (\n                <span className=\"block mt-[3px] text-[12px] text-[#777] whitespace-nowrap overflow-hidden text-ellipsis\">\n                  {progressDescription}\n                </span>\n              )}\n            </div>\n          )}\n        </div>\n      </div>\n    )\n  }\n)\nInfoBox.displayName = \"InfoBox\"\n\nexport { InfoBox }\nexport type { InfoBoxProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

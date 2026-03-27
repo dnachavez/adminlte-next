@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "header-navbar",
+  "title": "Header Navbar",
+  "description": "Top navigation bar for the main header with sidebar toggle and custom menu slots.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/header-navbar/components/header-navbar.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface HeaderNavbarProps extends React.HTMLAttributes<HTMLElement> {\n  sidebarToggle?: React.ReactNode\n  leftContent?: React.ReactNode\n  rightContent?: React.ReactNode\n}\n\nconst HeaderNavbar = React.forwardRef<HTMLElement, HeaderNavbarProps>(\n  (\n    {\n      className,\n      sidebarToggle,\n      leftContent,\n      rightContent,\n      children,\n      ...props\n    },\n    ref\n  ) => {\n    return (\n      <nav\n        ref={ref}\n        className={cn(\n          \"min-h-[50px] bg-[var(--adminlte-skin-navbar-bg)] text-[var(--adminlte-skin-navbar-color)]\",\n          \"border-none mb-0 flex items-center\",\n          \"transition-[margin-left] duration-300 ease-in-out\",\n          className\n        )}\n        role=\"navigation\"\n        {...props}\n      >\n        {sidebarToggle && (\n          <div className=\"flex items-center\">{sidebarToggle}</div>\n        )}\n        {leftContent && (\n          <div className=\"flex items-center\">{leftContent}</div>\n        )}\n        {children}\n        {rightContent && (\n          <div className=\"flex items-center ml-auto\">{rightContent}</div>\n        )}\n      </nav>\n    )\n  }\n)\nHeaderNavbar.displayName = \"HeaderNavbar\"\n\nexport { HeaderNavbar }\nexport type { HeaderNavbarProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

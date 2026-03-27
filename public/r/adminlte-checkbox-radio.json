@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "adminlte-checkbox-radio",
+  "title": "AdminLTE Checkbox & Radio",
+  "description": "Styled checkboxes and radio buttons with 5 color accents and inline/block layout.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/adminlte-checkbox-radio/ui/adminlte-checkbox-radio.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface AdminLTECheckboxProps\n  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, \"type\"> {\n  label?: string\n  color?: \"primary\" | \"danger\" | \"info\" | \"warning\" | \"success\"\n  inline?: boolean\n}\n\nconst colorStyles: Record<string, string> = {\n  primary: \"accent-[#3c8dbc]\",\n  danger: \"accent-[#dd4b39]\",\n  info: \"accent-[#00c0ef]\",\n  warning: \"accent-[#f39c12]\",\n  success: \"accent-[#00a65a]\",\n}\n\nconst AdminLTECheckbox = React.forwardRef<\n  HTMLInputElement,\n  AdminLTECheckboxProps\n>(({ className, label, color, inline = false, ...props }, ref) => {\n  return (\n    <div\n      className={cn(\n        \"relative min-h-[20px]\",\n        inline ? \"inline-block mr-[10px]\" : \"mb-[5px]\",\n        className\n      )}\n    >\n      <label className=\"flex items-center gap-[5px] cursor-pointer text-[14px] font-normal select-none\">\n        <input\n          ref={ref}\n          type=\"checkbox\"\n          className={cn(\n            \"w-[16px] h-[16px] cursor-pointer\",\n            color && colorStyles[color]\n          )}\n          {...props}\n        />\n        {label && <span>{label}</span>}\n      </label>\n    </div>\n  )\n})\nAdminLTECheckbox.displayName = \"AdminLTECheckbox\"\n\ninterface AdminLTERadioProps\n  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, \"type\"> {\n  label?: string\n  color?: \"primary\" | \"danger\" | \"info\" | \"warning\" | \"success\"\n  inline?: boolean\n}\n\nconst AdminLTERadio = React.forwardRef<HTMLInputElement, AdminLTERadioProps>(\n  ({ className, label, color, inline = false, ...props }, ref) => {\n    return (\n      <div\n        className={cn(\n          \"relative min-h-[20px]\",\n          inline ? \"inline-block mr-[10px]\" : \"mb-[5px]\",\n          className\n        )}\n      >\n        <label className=\"flex items-center gap-[5px] cursor-pointer text-[14px] font-normal select-none\">\n          <input\n            ref={ref}\n            type=\"radio\"\n            className={cn(\n              \"w-[16px] h-[16px] cursor-pointer\",\n              color && colorStyles[color]\n            )}\n            {...props}\n          />\n          {label && <span>{label}</span>}\n        </label>\n      </div>\n    )\n  }\n)\nAdminLTERadio.displayName = \"AdminLTERadio\"\n\nexport { AdminLTECheckbox, AdminLTERadio }\nexport type { AdminLTECheckboxProps, AdminLTERadioProps }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

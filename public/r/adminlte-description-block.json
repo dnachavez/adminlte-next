@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "adminlte-description-block",
+  "title": "AdminLTE Description Block",
+  "description": "Statistics display block with value, label, and up/down/flat trend indicator.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/adminlte-description-block/ui/adminlte-description-block.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface AdminLTEDescriptionBlockProps\n  extends React.HTMLAttributes<HTMLDivElement> {\n  value: string | number\n  label: string\n  indicator?: \"up\" | \"down\" | \"flat\"\n  indicatorColor?: string\n  bordered?: boolean\n}\n\nconst AdminLTEDescriptionBlock = React.forwardRef<\n  HTMLDivElement,\n  AdminLTEDescriptionBlockProps\n>(\n  (\n    {\n      className,\n      value,\n      label,\n      indicator,\n      indicatorColor,\n      bordered = false,\n      ...props\n    },\n    ref\n  ) => {\n    return (\n      <div\n        ref={ref}\n        className={cn(\n          \"block text-center m-[10px_0]\",\n          bordered && \"border-r border-r-[#f4f4f4]\",\n          className\n        )}\n        {...props}\n      >\n        {indicator && (\n          <span\n            className={cn(\n              \"text-[18px]\",\n              indicatorColor,\n              !indicatorColor && indicator === \"up\" && \"text-[#00a65a]\",\n              !indicatorColor && indicator === \"down\" && \"text-[#dd4b39]\",\n              !indicatorColor && indicator === \"flat\" && \"text-[#f39c12]\"\n            )}\n          >\n            {indicator === \"up\" && \"▲\"}\n            {indicator === \"down\" && \"▼\"}\n            {indicator === \"flat\" && \"▶\"}\n          </span>\n        )}\n        <h5 className=\"font-bold m-0 p-0 text-[20px]\">{value}</h5>\n        <span className=\"text-[#999] text-[14px] uppercase\">{label}</span>\n      </div>\n    )\n  }\n)\nAdminLTEDescriptionBlock.displayName = \"AdminLTEDescriptionBlock\"\n\nexport { AdminLTEDescriptionBlock }\nexport type { AdminLTEDescriptionBlockProps }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

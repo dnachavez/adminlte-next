@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "adminlte-input-group",
+  "title": "AdminLTE Input Group",
+  "description": "Input group with addon text, icons, or buttons before/after the input field.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/adminlte-input-group/ui/adminlte-input-group.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface AdminLTEInputGroupProps\n  extends React.HTMLAttributes<HTMLDivElement> {\n  size?: \"sm\" | \"md\" | \"lg\"\n  addonBefore?: React.ReactNode\n  addonAfter?: React.ReactNode\n  buttonBefore?: React.ReactNode\n  buttonAfter?: React.ReactNode\n}\n\nconst AdminLTEInputGroup = React.forwardRef<\n  HTMLDivElement,\n  AdminLTEInputGroupProps\n>(\n  (\n    {\n      className,\n      size = \"md\",\n      addonBefore,\n      addonAfter,\n      buttonBefore,\n      buttonAfter,\n      children,\n      ...props\n    },\n    ref\n  ) => {\n    const sizeClass = {\n      sm: \"text-[12px]\",\n      md: \"text-[14px]\",\n      lg: \"text-[18px]\",\n    }[size]\n\n    const addonClass =\n      \"inline-flex items-center px-[12px] py-[6px] text-[14px] font-normal leading-[1] text-[#555] text-center bg-[#eee] border border-solid border-[#ccc] rounded-[3px] whitespace-nowrap\"\n\n    return (\n      <div\n        ref={ref}\n        className={cn(\n          \"relative flex w-full border-collapse\",\n          sizeClass,\n          className\n        )}\n        {...props}\n      >\n        {addonBefore && (\n          <span\n            className={cn(\n              addonClass,\n              \"rounded-r-none border-r-0\"\n            )}\n          >\n            {addonBefore}\n          </span>\n        )}\n        {buttonBefore && (\n          <span className=\"flex items-center [&>*]:rounded-r-none\">\n            {buttonBefore}\n          </span>\n        )}\n        <div className=\"relative flex-1 [&>input]:rounded-none [&>input:first-child]:rounded-l-[3px] [&>input:last-child]:rounded-r-[3px]\">\n          {children}\n        </div>\n        {addonAfter && (\n          <span\n            className={cn(\n              addonClass,\n              \"rounded-l-none border-l-0\"\n            )}\n          >\n            {addonAfter}\n          </span>\n        )}\n        {buttonAfter && (\n          <span className=\"flex items-center [&>*]:rounded-l-none\">\n            {buttonAfter}\n          </span>\n        )}\n      </div>\n    )\n  }\n)\nAdminLTEInputGroup.displayName = \"AdminLTEInputGroup\"\n\nexport { AdminLTEInputGroup }\nexport type { AdminLTEInputGroupProps }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

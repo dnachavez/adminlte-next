@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "small-box",
+  "title": "Small Box",
+  "description": "Compact stat widget with colored background, large number, description text, icon, and footer link.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/small-box/components/small-box.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\nimport {\n  type AdminLTEColor,\n  bgColorMap,\n} from \"@/registry/new-york/adminlte-theme/lib/colors\"\n\ninterface SmallBoxProps extends React.HTMLAttributes<HTMLDivElement> {\n  color?: AdminLTEColor\n  value?: string | number\n  text?: string\n  icon?: React.ReactNode\n  footerText?: string\n  footerIcon?: React.ReactNode\n  href?: string\n  onClick?: React.MouseEventHandler<HTMLAnchorElement>\n}\n\nconst SmallBox = React.forwardRef<HTMLDivElement, SmallBoxProps>(\n  (\n    {\n      className,\n      color = \"aqua\",\n      value,\n      text,\n      icon,\n      footerText,\n      footerIcon,\n      href,\n      onClick,\n      ...props\n    },\n    ref\n  ) => {\n    return (\n      <div\n        ref={ref}\n        className={cn(\n          \"relative mb-[20px] overflow-hidden rounded-[2px]\",\n          bgColorMap[color],\n          className\n        )}\n        style={{ boxShadow: \"0 1px 1px rgba(0,0,0,0.1)\" }}\n        {...props}\n      >\n        {/* Inner content */}\n        <div className=\"p-[10px]\">\n          <h3 className=\"m-0 p-0 text-[38px] font-bold leading-tight whitespace-nowrap\">\n            {value}\n          </h3>\n          <p className=\"m-0 text-[15px]\">{text}</p>\n        </div>\n\n        {/* Icon */}\n        {icon && (\n          <div className=\"absolute right-[10px] top-[10px] text-[90px] leading-none opacity-20\">\n            {icon}\n          </div>\n        )}\n\n        {/* Footer link */}\n        {(footerText || footerIcon) && (\n          <a\n            href={href || \"#\"}\n            onClick={onClick}\n            className=\"block bg-black/10 py-[3px] px-0 text-center text-white/80 no-underline hover:text-white hover:bg-black/15 transition-colors\"\n          >\n            {footerText && <span>{footerText}</span>}\n            {footerIcon && (\n              <span className=\"ml-[5px] inline-flex\">{footerIcon}</span>\n            )}\n          </a>\n        )}\n      </div>\n    )\n  }\n)\nSmallBox.displayName = \"SmallBox\"\n\nexport { SmallBox }\nexport type { SmallBoxProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

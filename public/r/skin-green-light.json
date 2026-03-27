@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skin-green-light",
+  "title": "Skin Green Light",
+  "description": "Green skin with light sidebar and green navbar (#00a65a).",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/skin-green-light/skin-green-light.css",
+      "content": ".skin-green-light {\n  --adminlte-skin-navbar-bg: #00a65a;\n  --adminlte-skin-navbar-color: #ffffff;\n  --adminlte-skin-logo-bg: #00a65a;\n  --adminlte-skin-logo-color: #ffffff;\n  --adminlte-skin-logo-hover-bg: #00a65a;\n  --adminlte-skin-sidebar-bg: #f9fafc;\n  --adminlte-skin-sidebar-color: #444444;\n  --adminlte-skin-sidebar-hover-bg: #f4f4f5;\n  --adminlte-skin-sidebar-hover-color: #000000;\n  --adminlte-skin-sidebar-active-border: #00a65a;\n  --adminlte-skin-sidebar-active-bg: #f4f4f5;\n  --adminlte-skin-sidebar-active-color: #000000;\n  --adminlte-skin-sidebar-submenu-bg: #f4f4f5;\n  --adminlte-skin-sidebar-submenu-color: #777777;\n  --adminlte-skin-sidebar-submenu-hover-color: #000000;\n  --adminlte-skin-sidebar-header-bg: #eeeeee;\n  --adminlte-skin-sidebar-header-color: #999999;\n  --adminlte-skin-user-panel-color: #444444;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "type": "registry:theme"
+}

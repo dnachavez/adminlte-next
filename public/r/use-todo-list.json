@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-todo-list",
+  "title": "useTodoList",
+  "description": "Hook for managing todo list items with check/uncheck toggle and callbacks.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/use-todo-list/hooks/use-todo-list.ts",
+      "content": "import { useState, useCallback } from \"react\"\n\ninterface TodoItem {\n  id: string\n  text: string\n  done: boolean\n  [key: string]: unknown\n}\n\ninterface UseTodoListOptions {\n  onCheck?: (item: TodoItem) => void\n  onUnCheck?: (item: TodoItem) => void\n}\n\nexport function useTodoList(\n  initialItems: TodoItem[] = [],\n  options: UseTodoListOptions = {}\n) {\n  const { onCheck, onUnCheck } = options\n  const [items, setItems] = useState<TodoItem[]>(initialItems)\n\n  const toggleItem = useCallback(\n    (id: string) => {\n      setItems(prev =>\n        prev.map(item => {\n          if (item.id === id) {\n            const updated = { ...item, done: !item.done }\n            if (updated.done) {\n              onCheck?.(updated)\n            } else {\n              onUnCheck?.(updated)\n            }\n            return updated\n          }\n          return item\n        })\n      )\n    },\n    [onCheck, onUnCheck]\n  )\n\n  const addItem = useCallback((item: TodoItem) => {\n    setItems(prev => [...prev, item])\n  }, [])\n\n  const removeItem = useCallback((id: string) => {\n    setItems(prev => prev.filter(item => item.id !== id))\n  }, [])\n\n  return { items, toggleItem, addItem, removeItem, setItems }\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

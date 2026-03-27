@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "main-header",
+  "title": "Main Header",
+  "description": "Top header bar containing the logo and navigation bar with responsive collapsing.",
+  "registryDependencies": [
+    "adminlte-theme",
+    "header-logo",
+    "header-navbar",
+    "use-push-menu"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/main-header/components/main-header.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface MainHeaderProps extends React.HTMLAttributes<HTMLElement> {\n  logo?: React.ReactNode\n  collapsed?: boolean\n}\n\nconst MainHeader = React.forwardRef<HTMLElement, MainHeaderProps>(\n  ({ className, logo, collapsed = false, children, ...props }, ref) => {\n    return (\n      <header\n        ref={ref}\n        className={cn(\n          \"relative max-h-[100px] z-[1030] flex\",\n          className\n        )}\n        {...props}\n      >\n        {/* Logo area */}\n        <div\n          className={cn(\n            \"flex-shrink-0 transition-[width] duration-300\",\n            collapsed ? \"w-[50px]\" : \"w-[230px]\"\n          )}\n        >\n          {logo}\n        </div>\n        {/* Navbar area */}\n        <div className=\"flex-1 min-w-0\">\n          {children}\n        </div>\n      </header>\n    )\n  }\n)\nMainHeader.displayName = \"MainHeader\"\n\nexport { MainHeader }\nexport type { MainHeaderProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

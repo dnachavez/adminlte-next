@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "adminlte-table",
+  "title": "AdminLTE Table",
+  "description": "Table with striped, bordered, hover, condensed variants and responsive wrapper.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/adminlte-table/ui/adminlte-table.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface AdminLTETableProps\n  extends React.TableHTMLAttributes<HTMLTableElement> {\n  striped?: boolean\n  bordered?: boolean\n  hover?: boolean\n  condensed?: boolean\n  responsive?: boolean\n}\n\nconst AdminLTETable = React.forwardRef<HTMLTableElement, AdminLTETableProps>(\n  (\n    {\n      className,\n      striped = false,\n      bordered = false,\n      hover = false,\n      condensed = false,\n      responsive = false,\n      children,\n      ...props\n    },\n    ref\n  ) => {\n    const table = (\n      <table\n        ref={ref}\n        className={cn(\n          \"w-full max-w-full mb-[20px] bg-transparent border-collapse border-spacing-0\",\n          \"[&_th]:p-[8px] [&_td]:p-[8px] [&_th]:leading-[1.42857] [&_td]:leading-[1.42857] [&_th]:text-left [&_th]:border-b [&_th]:border-b-[#f4f4f4]\",\n          \"[&_thead_th]:border-b-[2px] [&_thead_th]:border-b-[#f4f4f4]\",\n          \"[&_tbody_td]:border-t [&_tbody_td]:border-t-[#f4f4f4]\",\n          striped &&\n            \"[&_tbody_tr:nth-child(odd)]:bg-[#f9f9f9]\",\n          bordered &&\n            \"border border-solid border-[#f4f4f4] [&_th]:border [&_th]:border-[#f4f4f4] [&_td]:border [&_td]:border-[#f4f4f4]\",\n          hover && \"[&_tbody_tr:hover]:bg-[#f5f5f5]\",\n          condensed && \"[&_th]:p-[5px] [&_td]:p-[5px]\",\n          className\n        )}\n        {...props}\n      >\n        {children}\n      </table>\n    )\n\n    if (responsive) {\n      return (\n        <div className=\"min-h-[0.01%] overflow-x-auto\">\n          {table}\n        </div>\n      )\n    }\n\n    return table\n  }\n)\nAdminLTETable.displayName = \"AdminLTETable\"\n\nexport { AdminLTETable }\nexport type { AdminLTETableProps }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

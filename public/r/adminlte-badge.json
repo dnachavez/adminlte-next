@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "adminlte-badge",
+  "title": "AdminLTE Badge",
+  "description": "Inline badge with 6 color variants for notification counts and status indicators.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/adminlte-badge/ui/adminlte-badge.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ntype BadgeVariant =\n  | \"default\"\n  | \"primary\"\n  | \"success\"\n  | \"info\"\n  | \"warning\"\n  | \"danger\"\n\nconst badgeStyles: Record<BadgeVariant, string> = {\n  default: \"bg-[#d2d6de] text-[#444]\",\n  primary: \"bg-[#3c8dbc] text-white\",\n  success: \"bg-[#00a65a] text-white\",\n  info: \"bg-[#00c0ef] text-white\",\n  warning: \"bg-[#f39c12] text-white\",\n  danger: \"bg-[#dd4b39] text-white\",\n}\n\ninterface AdminLTEBadgeProps extends React.HTMLAttributes<HTMLSpanElement> {\n  variant?: BadgeVariant\n}\n\nconst AdminLTEBadge = React.forwardRef<HTMLSpanElement, AdminLTEBadgeProps>(\n  ({ className, variant = \"default\", children, ...props }, ref) => {\n    return (\n      <span\n        ref={ref}\n        className={cn(\n          \"inline-block min-w-[10px] px-[6px] py-[3px] text-[12px] font-bold leading-none text-center whitespace-nowrap align-middle rounded-[10px]\",\n          badgeStyles[variant],\n          className\n        )}\n        {...props}\n      >\n        {children}\n      </span>\n    )\n  }\n)\nAdminLTEBadge.displayName = \"AdminLTEBadge\"\n\nexport { AdminLTEBadge }\nexport type { AdminLTEBadgeProps, BadgeVariant }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

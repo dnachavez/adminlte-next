@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "error-404-page",
+  "title": "404 Error Page",
+  "description": "404 not found error page with large headline, message, search form, and dashboard link.",
+  "registryDependencies": [
+    "adminlte-theme",
+    "adminlte-form-control"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/error-404-page/blocks/error-404-page.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface Error404PageProps extends React.HTMLAttributes<HTMLDivElement> {\n  headline?: string\n  message?: string\n  searchPlaceholder?: string\n  onSearch?: (query: string) => void\n  homeHref?: string\n}\n\nfunction Error404Page({\n  className,\n  headline = \"404\",\n  message = \"Oops! Page not found.\",\n  searchPlaceholder = \"Search\",\n  onSearch,\n  homeHref = \"/\",\n  ...props\n}: Error404PageProps) {\n  const [query, setQuery] = React.useState(\"\")\n\n  return (\n    <div\n      className={cn(\"bg-[#ecf0f5] min-h-screen\", className)}\n      {...props}\n    >\n      <section className=\"py-[40px] px-[15px]\">\n        <div className=\"max-w-[600px] mx-auto text-center\">\n          <h2 className=\"text-[#00c0ef] text-[100px] font-black leading-none m-0\">\n            {headline}\n          </h2>\n\n          <h3 className=\"text-[30px] font-light mt-[10px] mb-[20px]\">\n            {message}\n          </h3>\n\n          <p className=\"text-[#666] text-[16px] mb-[20px]\">\n            We could not find the page you were looking for.\n            Meanwhile, you may{\" \"}\n            <a href={homeHref} className=\"text-[#3c8dbc]\">\n              return to dashboard\n            </a>\n            .\n          </p>\n\n          <form\n            className=\"max-w-[300px] mx-auto\"\n            onSubmit={(e) => {\n              e.preventDefault()\n              onSearch?.(query)\n            }}\n          >\n            <div className=\"flex\">\n              <input\n                type=\"text\"\n                className=\"flex-1 h-[34px] px-[12px] py-[6px] text-[14px] text-[#555] bg-white border border-solid border-[#d2d6de] rounded-l-[3px] rounded-r-none focus:border-[#3c8dbc] focus:outline-none placeholder:text-[#999]\"\n                placeholder={searchPlaceholder}\n                value={query}\n                onChange={(e) => setQuery(e.target.value)}\n              />\n              <button\n                type=\"submit\"\n                className=\"px-[15px] py-[6px] bg-[#3c8dbc] border border-[#367fa9] text-white rounded-r-[3px] rounded-l-none text-[14px] cursor-pointer hover:bg-[#367fa9]\"\n              >\n                &#128269;\n              </button>\n            </div>\n          </form>\n        </div>\n      </section>\n    </div>\n  )\n}\n\nexport { Error404Page }\nexport type { Error404PageProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}

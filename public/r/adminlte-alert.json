@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "adminlte-alert",
+  "title": "AdminLTE Alert",
+  "description": "Alert with success/info/warning/danger variants and optional dismissible close button.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/adminlte-alert/ui/adminlte-alert.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ntype AlertVariant = \"success\" | \"info\" | \"warning\" | \"danger\"\n\nconst alertStyles: Record<AlertVariant, string> = {\n  success: \"bg-[#dff0d8] border-[#d6e9c6] text-[#3c763d]\",\n  info: \"bg-[#d9edf7] border-[#bce8f1] text-[#31708f]\",\n  warning: \"bg-[#fcf8e3] border-[#faebcc] text-[#8a6d3b]\",\n  danger: \"bg-[#f2dede] border-[#ebccd1] text-[#a94442]\",\n}\n\ninterface AdminLTEAlertProps extends React.HTMLAttributes<HTMLDivElement> {\n  variant?: AlertVariant\n  dismissible?: boolean\n  onDismiss?: () => void\n  icon?: React.ReactNode\n}\n\nconst AdminLTEAlert = React.forwardRef<HTMLDivElement, AdminLTEAlertProps>(\n  (\n    {\n      className,\n      variant = \"info\",\n      dismissible = false,\n      onDismiss,\n      icon,\n      children,\n      ...props\n    },\n    ref\n  ) => {\n    const [dismissed, setDismissed] = React.useState(false)\n\n    if (dismissed) return null\n\n    return (\n      <div\n        ref={ref}\n        role=\"alert\"\n        className={cn(\n          \"p-[15px] mb-[20px] border border-solid rounded-[3px]\",\n          alertStyles[variant],\n          className\n        )}\n        {...props}\n      >\n        {dismissible && (\n          <button\n            type=\"button\"\n            className=\"float-right -mr-[21px] -mt-[15px] p-0 bg-transparent border-none text-[21px] font-bold leading-none text-black/20 cursor-pointer hover:text-black/50\"\n            onClick={() => {\n              setDismissed(true)\n              onDismiss?.()\n            }}\n            aria-label=\"Close\"\n          >\n            &times;\n          </button>\n        )}\n        {icon && <span className=\"mr-[10px]\">{icon}</span>}\n        {children}\n      </div>\n    )\n  }\n)\nAdminLTEAlert.displayName = \"AdminLTEAlert\"\n\nexport { AdminLTEAlert }\nexport type { AdminLTEAlertProps, AlertVariant }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

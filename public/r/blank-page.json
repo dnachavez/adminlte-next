@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "blank-page",
+  "title": "Blank Page",
+  "description": "Starter/blank page template with content header, breadcrumbs, and empty box widget.",
+  "registryDependencies": [
+    "adminlte-theme",
+    "box"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/blank-page/blocks/blank-page.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface BlankPageProps extends React.HTMLAttributes<HTMLDivElement> {\n  title?: string\n  subtitle?: string\n  breadcrumbs?: { label: string; href?: string; active?: boolean }[]\n  children?: React.ReactNode\n}\n\nfunction BlankPage({\n  className,\n  title = \"Blank Page\",\n  subtitle = \"it all starts here\",\n  breadcrumbs = [],\n  children,\n  ...props\n}: BlankPageProps) {\n  return (\n    <div className={cn(\"\", className)} {...props}>\n      {/* Content Header */}\n      <section className=\"p-[15px_15px_0_15px]\">\n        <div className=\"flex items-center justify-between\">\n          <div>\n            <h1 className=\"text-[24px] m-0 inline-block font-normal\">{title}</h1>\n            {subtitle && (\n              <small className=\"text-[15px] text-[#666] ml-[10px]\">{subtitle}</small>\n            )}\n          </div>\n          {breadcrumbs.length > 0 && (\n            <ol className=\"flex list-none m-0 p-0 gap-[5px] text-[14px]\">\n              {breadcrumbs.map((crumb, i) => (\n                <li key={i} className=\"flex items-center gap-[5px]\">\n                  {i > 0 && <span className=\"text-[#666]\">/</span>}\n                  {crumb.active ? (\n                    <span className=\"text-[#666]\">{crumb.label}</span>\n                  ) : (\n                    <a href={crumb.href || \"#\"} className=\"text-[#3c8dbc] no-underline hover:underline\">\n                      {crumb.label}\n                    </a>\n                  )}\n                </li>\n              ))}\n            </ol>\n          )}\n        </div>\n      </section>\n\n      {/* Main content */}\n      <section className=\"p-[15px]\">\n        {children || (\n          <div className=\"bg-white shadow-[0_1px_1px_rgba(0,0,0,0.1)] rounded-[3px] border-t-[3px] border-t-[#d2d6de]\">\n            <div className=\"p-[10px]\">\n              <h4 className=\"text-[18px] m-0 mb-[10px]\">Title</h4>\n            </div>\n            <div className=\"p-[10px]\">\n              Start creating your amazing application!\n            </div>\n            <div className=\"p-[10px] border-t border-t-[#f4f4f4]\">\n              Footer\n            </div>\n          </div>\n        )}\n      </section>\n    </div>\n  )\n}\n\nexport { BlankPage }\nexport type { BlankPageProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}

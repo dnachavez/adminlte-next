@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skin-red-light",
+  "title": "Skin Red Light",
+  "description": "Red skin with light sidebar and red navbar (#dd4b39).",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/skin-red-light/skin-red-light.css",
+      "content": ".skin-red-light {\n  --adminlte-skin-navbar-bg: #dd4b39;\n  --adminlte-skin-navbar-color: #ffffff;\n  --adminlte-skin-logo-bg: #dd4b39;\n  --adminlte-skin-logo-color: #ffffff;\n  --adminlte-skin-logo-hover-bg: #dd4b39;\n  --adminlte-skin-sidebar-bg: #f9fafc;\n  --adminlte-skin-sidebar-color: #444444;\n  --adminlte-skin-sidebar-hover-bg: #f4f4f5;\n  --adminlte-skin-sidebar-hover-color: #000000;\n  --adminlte-skin-sidebar-active-border: #dd4b39;\n  --adminlte-skin-sidebar-active-bg: #f4f4f5;\n  --adminlte-skin-sidebar-active-color: #000000;\n  --adminlte-skin-sidebar-submenu-bg: #f4f4f5;\n  --adminlte-skin-sidebar-submenu-color: #777777;\n  --adminlte-skin-sidebar-submenu-hover-color: #000000;\n  --adminlte-skin-sidebar-header-bg: #eeeeee;\n  --adminlte-skin-sidebar-header-color: #999999;\n  --adminlte-skin-user-panel-color: #444444;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "type": "registry:theme"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "adminlte-callout",
+  "title": "AdminLTE Callout",
+  "description": "Callout box with colored left border, title, and content for highlighting important information.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/adminlte-callout/ui/adminlte-callout.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ntype CalloutVariant = \"default\" | \"success\" | \"info\" | \"warning\" | \"danger\"\n\nconst calloutStyles: Record<CalloutVariant, string> = {\n  default: \"border-l-[#d2d6de]\",\n  success: \"border-l-[#00a65a]\",\n  info: \"border-l-[#00c0ef]\",\n  warning: \"border-l-[#f39c12]\",\n  danger: \"border-l-[#dd4b39]\",\n}\n\nconst calloutTitleStyles: Record<CalloutVariant, string> = {\n  default: \"text-[#444]\",\n  success: \"text-[#00a65a]\",\n  info: \"text-[#00c0ef]\",\n  warning: \"text-[#f39c12]\",\n  danger: \"text-[#dd4b39]\",\n}\n\ninterface AdminLTECalloutProps extends React.HTMLAttributes<HTMLDivElement> {\n  variant?: CalloutVariant\n  title?: string\n}\n\nconst AdminLTECallout = React.forwardRef<HTMLDivElement, AdminLTECalloutProps>(\n  ({ className, variant = \"default\", title, children, ...props }, ref) => {\n    return (\n      <div\n        ref={ref}\n        className={cn(\n          \"mb-[20px] p-[20px] border-l-[5px] border-l-solid bg-[#fff] shadow-[0_1px_1px_rgba(0,0,0,0.15)] rounded-[3px]\",\n          calloutStyles[variant],\n          className\n        )}\n        {...props}\n      >\n        {title && (\n          <h4\n            className={cn(\n              \"mt-0 mb-[5px] text-[18px] font-light\",\n              calloutTitleStyles[variant]\n            )}\n          >\n            {title}\n          </h4>\n        )}\n        {children}\n      </div>\n    )\n  }\n)\nAdminLTECallout.displayName = \"AdminLTECallout\"\n\nexport { AdminLTECallout }\nexport type { AdminLTECalloutProps, CalloutVariant }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

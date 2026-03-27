@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "adminlte-users-list",
+  "title": "AdminLTE Users List",
+  "description": "Grid of user avatars with names and dates for displaying team members or recent users.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/adminlte-users-list/ui/adminlte-users-list.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface UserItem {\n  id: string\n  name: string\n  avatarUrl: string\n  date?: string\n  href?: string\n}\n\ninterface AdminLTEUsersListProps extends React.HTMLAttributes<HTMLUListElement> {\n  users: UserItem[]\n  columns?: 2 | 3 | 4 | 6\n}\n\nconst AdminLTEUsersList = React.forwardRef<\n  HTMLUListElement,\n  AdminLTEUsersListProps\n>(({ className, users, columns = 4, ...props }, ref) => {\n  const gridCols = {\n    2: \"grid-cols-2\",\n    3: \"grid-cols-3\",\n    4: \"grid-cols-4\",\n    6: \"grid-cols-6\",\n  }[columns]\n\n  return (\n    <ul\n      ref={ref}\n      className={cn(\"grid list-none m-0 p-0\", gridCols, className)}\n      {...props}\n    >\n      {users.map((user) => (\n        <li key={user.id} className=\"text-center py-[10px]\">\n          <a\n            href={user.href || \"#\"}\n            className=\"block text-[#666] no-underline hover:text-[#333]\"\n          >\n            <img\n              src={user.avatarUrl}\n              alt={user.name}\n              className=\"rounded-full w-full max-w-[100px] h-auto mx-auto\"\n            />\n            <span className=\"block text-[14px] mt-[5px]\">{user.name}</span>\n            {user.date && (\n              <span className=\"block text-[12px] text-[#999]\">\n                {user.date}\n              </span>\n            )}\n          </a>\n        </li>\n      ))}\n    </ul>\n  )\n})\nAdminLTEUsersList.displayName = \"AdminLTEUsersList\"\n\nexport { AdminLTEUsersList }\nexport type { AdminLTEUsersListProps, UserItem }\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

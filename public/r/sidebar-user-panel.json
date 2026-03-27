@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sidebar-user-panel",
+  "title": "Sidebar User Panel",
+  "description": "User information panel for the sidebar with avatar, name, and online status.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/sidebar-user-panel/components/sidebar-user-panel.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface SidebarUserPanelProps extends React.HTMLAttributes<HTMLDivElement> {\n  avatarUrl?: string\n  name?: string\n  status?: string\n  statusColor?: string\n  href?: string\n}\n\nconst SidebarUserPanel = React.forwardRef<HTMLDivElement, SidebarUserPanelProps>(\n  (\n    {\n      className,\n      avatarUrl,\n      name,\n      status = \"Online\",\n      statusColor = \"#00a65a\",\n      href,\n      ...props\n    },\n    ref\n  ) => {\n    const content = (\n      <div\n        ref={ref}\n        className={cn(\n          \"flex items-center p-[10px] overflow-hidden whitespace-nowrap\",\n          className\n        )}\n        {...props}\n      >\n        {/* Avatar */}\n        {avatarUrl && (\n          <div className=\"shrink-0\">\n            <img\n              src={avatarUrl}\n              alt={name || \"User avatar\"}\n              className=\"w-[45px] h-[45px] rounded-full object-cover\"\n            />\n          </div>\n        )}\n\n        {/* Info */}\n        <div className=\"ml-[10px] flex flex-col overflow-hidden\">\n          {name && (\n            <span className=\"text-white text-[14px] font-normal truncate\">\n              {name}\n            </span>\n          )}\n          {status && (\n            <span className=\"text-[12px] flex items-center gap-[5px] mt-[2px]\">\n              <span\n                className=\"inline-block w-[8px] h-[8px] rounded-full\"\n                style={{ backgroundColor: statusColor }}\n              />\n              <span style={{ color: statusColor }}>{status}</span>\n            </span>\n          )}\n        </div>\n      </div>\n    )\n\n    if (href) {\n      return (\n        <a href={href} className=\"no-underline block\">\n          {content}\n        </a>\n      )\n    }\n\n    return content\n  }\n)\nSidebarUserPanel.displayName = \"SidebarUserPanel\"\n\nexport { SidebarUserPanel }\nexport type { SidebarUserPanelProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}

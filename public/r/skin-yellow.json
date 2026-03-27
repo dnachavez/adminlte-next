@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skin-yellow",
+  "title": "Skin Yellow",
+  "description": "Yellow skin for AdminLTE with dark sidebar and yellow navbar (#f39c12).",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/skin-yellow/skin-yellow.css",
+      "content": ".skin-yellow {\n  --adminlte-skin-navbar-bg: #f39c12;\n  --adminlte-skin-navbar-color: #ffffff;\n  --adminlte-skin-logo-bg: #db8b0b;\n  --adminlte-skin-logo-color: #ffffff;\n  --adminlte-skin-logo-hover-bg: #d2850b;\n  --adminlte-skin-sidebar-bg: #222d32;\n  --adminlte-skin-sidebar-color: #b8c7ce;\n  --adminlte-skin-sidebar-hover-bg: #1e282c;\n  --adminlte-skin-sidebar-hover-color: #ffffff;\n  --adminlte-skin-sidebar-active-border: #f39c12;\n  --adminlte-skin-sidebar-active-bg: #1e282c;\n  --adminlte-skin-sidebar-active-color: #ffffff;\n  --adminlte-skin-sidebar-submenu-bg: #2c3b41;\n  --adminlte-skin-sidebar-submenu-color: #8aa4af;\n  --adminlte-skin-sidebar-submenu-hover-color: #ffffff;\n  --adminlte-skin-sidebar-header-bg: #1a2226;\n  --adminlte-skin-sidebar-header-color: #4b646f;\n  --adminlte-skin-user-panel-color: #ffffff;\n}\n",
+      "type": "registry:style"
+    }
+  ],
+  "type": "registry:theme"
+}

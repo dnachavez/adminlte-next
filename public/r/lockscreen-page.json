@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lockscreen-page",
+  "title": "Lockscreen Page",
+  "description": "Lock screen page with user avatar, name, and password input to unlock the session.",
+  "registryDependencies": [
+    "adminlte-theme",
+    "adminlte-form-control",
+    "adminlte-button"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/lockscreen-page/blocks/lockscreen-page.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface LockscreenPageProps extends React.HTMLAttributes<HTMLDivElement> {\n  userName: string\n  avatarUrl: string\n  logo?: React.ReactNode\n  logoText?: string\n  onUnlock?: (password: string) => void\n}\n\nfunction LockscreenPage({\n  className,\n  userName,\n  avatarUrl,\n  logo,\n  logoText = \"AdminLTE\",\n  onUnlock,\n  ...props\n}: LockscreenPageProps) {\n  const [password, setPassword] = React.useState(\"\")\n\n  const handleSubmit = (e: React.FormEvent) => {\n    e.preventDefault()\n    onUnlock?.(password)\n  }\n\n  return (\n    <div\n      className={cn(\n        \"min-h-screen flex items-center justify-center bg-[#d2d6de]\",\n        className\n      )}\n      {...props}\n    >\n      <div className=\"w-full max-w-[360px] mx-auto text-center\">\n        <div className=\"mb-[25px]\">\n          {logo || (\n            <a href=\"#\" className=\"text-[35px] font-bold no-underline text-[#444]\">\n              <b>{logoText.slice(0, 5)}</b>{logoText.slice(5)}\n            </a>\n          )}\n        </div>\n\n        <div className=\"bg-white shadow-[0_1px_1px_rgba(0,0,0,0.1)] rounded-[3px] p-[20px]\">\n          <div className=\"mb-[15px]\">\n            <img\n              src={avatarUrl}\n              alt={userName}\n              className=\"w-[70px] h-[70px] rounded-full mx-auto border-[3px] border-white shadow-[0_1px_3px_rgba(0,0,0,0.2)]\"\n            />\n          </div>\n\n          <h3 className=\"text-[22px] font-light text-center mb-[20px]\">\n            {userName}\n          </h3>\n\n          <form onSubmit={handleSubmit}>\n            <div className=\"flex gap-0\">\n              <input\n                type=\"password\"\n                className=\"flex-1 h-[34px] px-[12px] py-[6px] text-[14px] text-[#555] bg-white border border-solid border-[#d2d6de] rounded-l-[3px] rounded-r-none focus:border-[#3c8dbc] focus:outline-none placeholder:text-[#999]\"\n                placeholder=\"Password\"\n                value={password}\n                onChange={(e) => setPassword(e.target.value)}\n              />\n              <button\n                type=\"submit\"\n                className=\"px-[15px] py-[6px] bg-[#3c8dbc] border border-[#367fa9] text-white rounded-r-[3px] rounded-l-none text-[14px] cursor-pointer hover:bg-[#367fa9]\"\n              >\n                &#10132;\n              </button>\n            </div>\n          </form>\n        </div>\n\n        <p className=\"text-[13px] text-[#999] mt-[15px]\">\n          Enter your password to retrieve your session\n        </p>\n      </div>\n    </div>\n  )\n}\n\nexport { LockscreenPage }\nexport type { LockscreenPageProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-removable",
+  "title": "useRemovable",
+  "description": "Hook for removable box widget with slide-up animation then unmount.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/use-removable/hooks/use-removable.ts",
+      "content": "import { useState, useCallback } from \"react\"\n\nexport function useRemovable() {\n  const [isRemoved, setIsRemoved] = useState(false)\n  const [isRemoving, setIsRemoving] = useState(false)\n\n  const remove = useCallback(() => {\n    setIsRemoving(true)\n    setTimeout(() => {\n      setIsRemoved(true)\n      setIsRemoving(false)\n    }, 500)\n  }, [])\n\n  return { isRemoved, isRemoving, remove }\n}\n",
+      "type": "registry:hook"
+    }
+  ],
+  "type": "registry:hook"
+}

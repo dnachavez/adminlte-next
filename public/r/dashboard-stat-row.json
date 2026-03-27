@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dashboard-stat-row",
+  "title": "Dashboard Stat Row",
+  "description": "Responsive grid row for SmallBox or InfoBox stat widgets with 2/3/4/6 column layouts.",
+  "registryDependencies": [
+    "adminlte-theme"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/dashboard-stat-row/blocks/dashboard-stat-row.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/registry/new-york/adminlte-theme/lib/cn\"\n\ninterface DashboardStatRowProps extends React.HTMLAttributes<HTMLDivElement> {\n  columns?: 2 | 3 | 4 | 6\n}\n\nfunction DashboardStatRow({\n  className,\n  columns = 4,\n  children,\n  ...props\n}: DashboardStatRowProps) {\n  const gridCols = {\n    2: \"grid-cols-1 sm:grid-cols-2\",\n    3: \"grid-cols-1 sm:grid-cols-2 lg:grid-cols-3\",\n    4: \"grid-cols-1 sm:grid-cols-2 lg:grid-cols-4\",\n    6: \"grid-cols-2 sm:grid-cols-3 lg:grid-cols-6\",\n  }[columns]\n\n  return (\n    <div\n      className={cn(\"grid gap-[15px]\", gridCols, className)}\n      {...props}\n    >\n      {children}\n    </div>\n  )\n}\n\nexport { DashboardStatRow }\nexport type { DashboardStatRowProps }\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}
