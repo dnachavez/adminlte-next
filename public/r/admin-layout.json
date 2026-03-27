@@ -7,15 +7,15 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "adminlte-theme",
-    "main-header",
-    "main-sidebar",
-    "content-wrapper",
-    "content-header",
-    "main-footer",
-    "control-sidebar",
-    "use-layout",
-    "use-push-menu"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/main-header.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/main-sidebar.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/content-wrapper.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/content-header.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/main-footer.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/control-sidebar.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-layout.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-push-menu.json"
   ],
   "files": [
     {

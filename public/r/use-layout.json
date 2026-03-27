@@ -4,7 +4,7 @@
   "title": "useLayout",
   "description": "Hook for calculating content wrapper min-height based on viewport, header, footer, and sidebar.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

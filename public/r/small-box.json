@@ -4,7 +4,7 @@
   "title": "Small Box",
   "description": "Compact stat widget with colored background, large number, description text, icon, and footer link.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Skin Blue Light",
   "description": "Blue skin with light sidebar (#f9fafc) and blue navbar (#3c8dbc).",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

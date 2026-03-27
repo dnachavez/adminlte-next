@@ -4,7 +4,7 @@
   "title": "AdminLTE Description Block",
   "description": "Statistics display block with value, label, and up/down/flat trend indicator.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

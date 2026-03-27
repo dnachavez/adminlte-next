@@ -4,9 +4,9 @@
   "title": "User Menu Dropdown",
   "description": "Navbar dropdown for user account with header banner, avatar, menu items, and sign out button.",
   "registryDependencies": [
-    "adminlte-theme",
-    "adminlte-dropdown",
-    "adminlte-button"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-dropdown.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json"
   ],
   "files": [
     {

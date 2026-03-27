@@ -4,8 +4,8 @@
   "title": "Invoice Print Page",
   "description": "Print-optimized invoice layout without navigation chrome.",
   "registryDependencies": [
-    "adminlte-theme",
-    "adminlte-table"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-table.json"
   ],
   "files": [
     {

@@ -4,9 +4,9 @@
   "title": "Lockscreen Page",
   "description": "Lock screen page with user avatar, name, and password input to unlock the session.",
   "registryDependencies": [
-    "adminlte-theme",
-    "adminlte-form-control",
-    "adminlte-button"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-form-control.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json"
   ],
   "files": [
     {

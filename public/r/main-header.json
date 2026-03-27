@@ -4,10 +4,10 @@
   "title": "Main Header",
   "description": "Top header bar containing the logo and navigation bar with responsive collapsing.",
   "registryDependencies": [
-    "adminlte-theme",
-    "header-logo",
-    "header-navbar",
-    "use-push-menu"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/header-logo.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/header-navbar.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-push-menu.json"
   ],
   "files": [
     {

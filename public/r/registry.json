@@ -54,7 +54,7 @@
       "title": "Skin Blue",
       "description": "Blue skin for AdminLTE with dark sidebar and blue navbar (#3c8dbc).",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -69,7 +69,7 @@
       "title": "Skin Blue Light",
       "description": "Blue skin with light sidebar (#f9fafc) and blue navbar (#3c8dbc).",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -84,7 +84,7 @@
       "title": "Skin Green",
       "description": "Green skin for AdminLTE with dark sidebar and green navbar (#00a65a).",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -99,7 +99,7 @@
       "title": "Skin Green Light",
       "description": "Green skin with light sidebar and green navbar (#00a65a).",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -114,7 +114,7 @@
       "title": "Skin Red",
       "description": "Red skin for AdminLTE with dark sidebar and red navbar (#dd4b39).",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -129,7 +129,7 @@
       "title": "Skin Red Light",
       "description": "Red skin with light sidebar and red navbar (#dd4b39).",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -144,7 +144,7 @@
       "title": "Skin Yellow",
       "description": "Yellow skin for AdminLTE with dark sidebar and yellow navbar (#f39c12).",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -159,7 +159,7 @@
       "title": "Skin Yellow Light",
       "description": "Yellow skin with light sidebar and yellow navbar (#f39c12).",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -174,7 +174,7 @@
       "title": "Skin Purple",
       "description": "Purple skin for AdminLTE with dark sidebar and purple navbar (#605ca8).",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -189,7 +189,7 @@
       "title": "Skin Purple Light",
       "description": "Purple skin with light sidebar and purple navbar (#605ca8).",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -204,7 +204,7 @@
       "title": "Skin Black",
       "description": "Black skin for AdminLTE with dark sidebar and white navbar with dark text.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -219,7 +219,7 @@
       "title": "Skin Black Light",
       "description": "Black skin with light sidebar and white navbar with dark text.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -234,7 +234,7 @@
       "title": "useCollapsible",
       "description": "Hook for collapsible box widget with CSS max-height animation (500ms slide toggle).",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -249,7 +249,7 @@
       "title": "useRemovable",
       "description": "Hook for removable box widget with slide-up animation then unmount.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -264,7 +264,7 @@
       "title": "useBoxLoading",
       "description": "Hook for box loading overlay state with spinner toggle.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -279,7 +279,7 @@
       "title": "usePushMenu",
       "description": "Hook for sidebar push menu toggle with responsive 767px breakpoint handling.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -294,7 +294,7 @@
       "title": "useTreeview",
       "description": "Hook for accordion treeview menu with expand/collapse animation.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -309,7 +309,7 @@
       "title": "useControlSidebar",
       "description": "Hook for right control sidebar slide toggle.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -324,7 +324,7 @@
       "title": "useLayout",
       "description": "Hook for calculating content wrapper min-height based on viewport, header, footer, and sidebar.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -339,7 +339,7 @@
       "title": "useDirectChat",
       "description": "Hook for toggling direct chat contacts panel visibility.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -354,7 +354,7 @@
       "title": "useTodoList",
       "description": "Hook for managing todo list items with check/uncheck toggle and callbacks.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -372,7 +372,7 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -387,7 +387,7 @@
       "title": "AdminLTE Badge",
       "description": "Inline badge with 6 color variants for notification counts and status indicators.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -402,7 +402,7 @@
       "title": "AdminLTE Label",
       "description": "Inline label with 6 color variants for categorization and status display.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -417,7 +417,7 @@
       "title": "AdminLTE Alert",
       "description": "Alert with success/info/warning/danger variants and optional dismissible close button.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -432,7 +432,7 @@
       "title": "AdminLTE Callout",
       "description": "Callout box with colored left border, title, and content for highlighting important information.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -447,7 +447,7 @@
       "title": "AdminLTE Progress Bar",
       "description": "Progress bar with 6 colors (aqua/red/green/yellow/blue/purple), 4 sizes, striped and animated variants, vertical mode, and description labels.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -462,8 +462,8 @@
       "title": "AdminLTE Modal",
       "description": "Modal dialog with colored header variants (primary/info/success/warning/danger), three sizes, and header/body/footer sections.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-button"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json"
       ],
       "files": [
         {
@@ -478,7 +478,7 @@
       "title": "AdminLTE Tabs",
       "description": "Tab navigation with colored header variants, custom box styling, header tools slot, and top/bottom position.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -493,7 +493,7 @@
       "title": "AdminLTE Carousel",
       "description": "Image carousel with auto-play, indicators, and prev/next controls.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -508,7 +508,7 @@
       "title": "AdminLTE Dropdown",
       "description": "Dropdown menu with trigger element, items, headers, footers, and dividers.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -523,7 +523,7 @@
       "title": "AdminLTE Description Block",
       "description": "Statistics display block with value, label, and up/down/flat trend indicator.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -538,7 +538,7 @@
       "title": "AdminLTE Users List",
       "description": "Grid of user avatars with names and dates for displaying team members or recent users.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -553,7 +553,7 @@
       "title": "AdminLTE Products List",
       "description": "Vertical list of products with image, name, description, and label for recently added products.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -568,7 +568,7 @@
       "title": "AdminLTE Form Controls",
       "description": "Form elements including input, textarea, select with AdminLTE styling, validation states, and form groups.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -583,7 +583,7 @@
       "title": "AdminLTE Input Group",
       "description": "Input group with addon text, icons, or buttons before/after the input field.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -598,7 +598,7 @@
       "title": "AdminLTE Checkbox & Radio",
       "description": "Styled checkboxes and radio buttons with 5 color accents and inline/block layout.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -613,7 +613,7 @@
       "title": "AdminLTE Table",
       "description": "Table with striped, bordered, hover, condensed variants and responsive wrapper.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -628,7 +628,7 @@
       "title": "AdminLTE Pagination",
       "description": "Pagination component with flat variant, three sizes, and ellipsis for large page counts.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -643,7 +643,7 @@
       "title": "AdminLTE Chart Placeholder",
       "description": "Chart container placeholder for line, area, bar, pie, and donut charts with configurable height.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -661,11 +661,11 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-button",
-        "use-collapsible",
-        "use-removable",
-        "use-box-loading"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-collapsible.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-removable.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-box-loading.json"
       ],
       "files": [
         {
@@ -680,7 +680,7 @@
       "title": "Small Box",
       "description": "Compact stat widget with colored background, large number, description text, icon, and footer link.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -695,8 +695,8 @@
       "title": "Info Box",
       "description": "Information display widget with colored icon area, text label, number value, and optional progress bar.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-progress"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-progress.json"
       ],
       "files": [
         {
@@ -711,10 +711,10 @@
       "title": "Sidebar Menu",
       "description": "Sidebar navigation menu with treeview support, section headers, icons, badges, and accordion behavior.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-badge",
-        "adminlte-label",
-        "use-treeview"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-badge.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-label.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-treeview.json"
       ],
       "files": [
         {
@@ -729,7 +729,7 @@
       "title": "Sidebar User Panel",
       "description": "User information panel for the sidebar with avatar, name, and online status.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -744,8 +744,8 @@
       "title": "Sidebar Search Form",
       "description": "Search form for the sidebar with themed input and button.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-form-control"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-form-control.json"
       ],
       "files": [
         {
@@ -760,7 +760,7 @@
       "title": "Header Logo",
       "description": "Logo component for the main header with full and mini (collapsed) variants.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -775,7 +775,7 @@
       "title": "Header Navbar",
       "description": "Top navigation bar for the main header with sidebar toggle and custom menu slots.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -790,9 +790,9 @@
       "title": "Messages Dropdown",
       "description": "Navbar dropdown for displaying recent messages with avatar, name, text preview, and timestamp.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-dropdown",
-        "adminlte-badge"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-dropdown.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-badge.json"
       ],
       "files": [
         {
@@ -807,9 +807,9 @@
       "title": "Notifications Dropdown",
       "description": "Navbar dropdown for displaying notifications with icons and text.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-dropdown",
-        "adminlte-badge"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-dropdown.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-badge.json"
       ],
       "files": [
         {
@@ -824,9 +824,9 @@
       "title": "Tasks Dropdown",
       "description": "Navbar dropdown for displaying task progress with progress bars.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-dropdown",
-        "adminlte-progress"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-dropdown.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-progress.json"
       ],
       "files": [
         {
@@ -841,9 +841,9 @@
       "title": "User Menu Dropdown",
       "description": "Navbar dropdown for user account with header banner, avatar, menu items, and sign out button.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-dropdown",
-        "adminlte-button"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-dropdown.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json"
       ],
       "files": [
         {
@@ -858,10 +858,10 @@
       "title": "Main Header",
       "description": "Top header bar containing the logo and navigation bar with responsive collapsing.",
       "registryDependencies": [
-        "adminlte-theme",
-        "header-logo",
-        "header-navbar",
-        "use-push-menu"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/header-logo.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/header-navbar.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-push-menu.json"
       ],
       "files": [
         {
@@ -876,11 +876,11 @@
       "title": "Main Sidebar",
       "description": "Left sidebar with 230px width, themed colors, collapse/expand transitions, and mobile responsive behavior.",
       "registryDependencies": [
-        "adminlte-theme",
-        "sidebar-menu",
-        "sidebar-user-panel",
-        "sidebar-search-form",
-        "use-push-menu"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/sidebar-menu.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/sidebar-user-panel.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/sidebar-search-form.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-push-menu.json"
       ],
       "files": [
         {
@@ -895,7 +895,7 @@
       "title": "Main Footer",
       "description": "Page footer with white background, border-top, and left/right content slots.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -910,7 +910,7 @@
       "title": "Content Wrapper",
       "description": "Main content area with #ecf0f5 background, margin-left offset for sidebar, and transition animations.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -925,7 +925,7 @@
       "title": "Content Header",
       "description": "Page title section with h1 heading, subtitle, and breadcrumb navigation.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -940,9 +940,9 @@
       "title": "Control Sidebar",
       "description": "Right sidebar panel with dark/light variants, tab navigation, and slide-in toggle.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-tabs",
-        "use-control-sidebar"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-tabs.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-control-sidebar.json"
       ],
       "files": [
         {
@@ -957,8 +957,8 @@
       "title": "Timeline",
       "description": "Vertical timeline with colored icon markers, time labels, headers, body content, and footer actions.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-badge"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-badge.json"
       ],
       "files": [
         {
@@ -973,9 +973,9 @@
       "title": "Direct Chat",
       "description": "Chat widget with message bubbles (left/right aligned), contacts panel toggle, and message input.",
       "registryDependencies": [
-        "adminlte-theme",
-        "box",
-        "use-direct-chat"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/box.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-direct-chat.json"
       ],
       "files": [
         {
@@ -990,7 +990,7 @@
       "title": "Chat Widget",
       "description": "Simple chat display with message list, avatars, timestamps, and message input.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -1005,9 +1005,9 @@
       "title": "Todo List",
       "description": "Interactive todo list with checkbox toggle, strikethrough on completion, colored left border, and delete action.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-label",
-        "use-todo-list"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-label.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-todo-list.json"
       ],
       "files": [
         {
@@ -1022,8 +1022,8 @@
       "title": "Profile Card",
       "description": "User profile card with cover image, avatar, name, role, and stats row in two layout styles.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-description-block"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-description-block.json"
       ],
       "files": [
         {
@@ -1041,15 +1041,15 @@
         "lucide-react"
       ],
       "registryDependencies": [
-        "adminlte-theme",
-        "main-header",
-        "main-sidebar",
-        "content-wrapper",
-        "content-header",
-        "main-footer",
-        "control-sidebar",
-        "use-layout",
-        "use-push-menu"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/main-header.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/main-sidebar.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/content-wrapper.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/content-header.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/main-footer.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/control-sidebar.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-layout.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-push-menu.json"
       ],
       "files": [
         {
@@ -1068,7 +1068,7 @@
       "title": "Dashboard Stat Row",
       "description": "Responsive grid row for SmallBox or InfoBox stat widgets with 2/3/4/6 column layouts.",
       "registryDependencies": [
-        "adminlte-theme"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
       ],
       "files": [
         {
@@ -1083,16 +1083,16 @@
       "title": "Dashboard Overview",
       "description": "Example dashboard page layout with stats row, main content area, side content, and bottom section.",
       "registryDependencies": [
-        "adminlte-theme",
-        "admin-layout",
-        "box",
-        "small-box",
-        "info-box",
-        "timeline",
-        "todo-list",
-        "direct-chat",
-        "adminlte-chart-placeholder",
-        "adminlte-progress"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/admin-layout.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/box.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/small-box.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/info-box.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/timeline.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/todo-list.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/direct-chat.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-chart-placeholder.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-progress.json"
       ],
       "files": [
         {
@@ -1107,10 +1107,10 @@
       "title": "Login Page",
       "description": "Authentication login page with email/password form, remember me checkbox, social auth buttons, and links to register/forgot password.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-form-control",
-        "adminlte-button",
-        "adminlte-checkbox-radio"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-form-control.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-checkbox-radio.json"
       ],
       "files": [
         {
@@ -1125,10 +1125,10 @@
       "title": "Register Page",
       "description": "Authentication registration page with full name, email, password fields, terms agreement, and social auth buttons.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-form-control",
-        "adminlte-button",
-        "adminlte-checkbox-radio"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-form-control.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-checkbox-radio.json"
       ],
       "files": [
         {
@@ -1143,9 +1143,9 @@
       "title": "Lockscreen Page",
       "description": "Lock screen page with user avatar, name, and password input to unlock the session.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-form-control",
-        "adminlte-button"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-form-control.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json"
       ],
       "files": [
         {
@@ -1160,8 +1160,8 @@
       "title": "404 Error Page",
       "description": "404 not found error page with large headline, message, search form, and dashboard link.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-form-control"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-form-control.json"
       ],
       "files": [
         {
@@ -1176,8 +1176,8 @@
       "title": "500 Error Page",
       "description": "500 server error page with large headline, message, search form, and dashboard link.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-form-control"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-form-control.json"
       ],
       "files": [
         {
@@ -1192,9 +1192,9 @@
       "title": "Invoice Page",
       "description": "Invoice layout with from/to addresses, line items table, subtotal/tax/shipping/total, and print button.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-table",
-        "adminlte-button"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-table.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json"
       ],
       "files": [
         {
@@ -1209,8 +1209,8 @@
       "title": "Invoice Print Page",
       "description": "Print-optimized invoice layout without navigation chrome.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-table"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-table.json"
       ],
       "files": [
         {
@@ -1225,10 +1225,10 @@
       "title": "Profile Page",
       "description": "User profile page with cover image, avatar, stats, tabbed content area, and sidebar section.",
       "registryDependencies": [
-        "adminlte-theme",
-        "adminlte-tabs",
-        "box",
-        "profile-card"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-tabs.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/box.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/profile-card.json"
       ],
       "files": [
         {
@@ -1243,8 +1243,8 @@
       "title": "Blank Page",
       "description": "Starter/blank page template with content header, breadcrumbs, and empty box widget.",
       "registryDependencies": [
-        "adminlte-theme",
-        "box"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/box.json"
       ],
       "files": [
         {
@@ -1259,10 +1259,10 @@
       "title": "Mailbox Layout",
       "description": "Email mailbox with folder sidebar, email list with checkboxes/stars, read view, and compose view.",
       "registryDependencies": [
-        "adminlte-theme",
-        "box",
-        "adminlte-table",
-        "adminlte-button"
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/box.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-table.json",
+        "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json"
       ],
       "files": [
         {

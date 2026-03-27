@@ -4,8 +4,8 @@
   "title": "Timeline",
   "description": "Vertical timeline with colored icon markers, time labels, headers, body content, and footer actions.",
   "registryDependencies": [
-    "adminlte-theme",
-    "adminlte-badge"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-badge.json"
   ],
   "files": [
     {

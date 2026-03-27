@@ -4,7 +4,7 @@
   "title": "AdminLTE Input Group",
   "description": "Input group with addon text, icons, or buttons before/after the input field.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

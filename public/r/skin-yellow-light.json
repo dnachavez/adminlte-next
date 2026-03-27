@@ -4,7 +4,7 @@
   "title": "Skin Yellow Light",
   "description": "Yellow skin with light sidebar and yellow navbar (#f39c12).",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

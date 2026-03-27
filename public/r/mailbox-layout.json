@@ -4,10 +4,10 @@
   "title": "Mailbox Layout",
   "description": "Email mailbox with folder sidebar, email list with checkboxes/stars, read view, and compose view.",
   "registryDependencies": [
-    "adminlte-theme",
-    "box",
-    "adminlte-table",
-    "adminlte-button"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/box.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-table.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json"
   ],
   "files": [
     {

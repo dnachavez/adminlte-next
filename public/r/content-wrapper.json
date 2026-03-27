@@ -4,7 +4,7 @@
   "title": "Content Wrapper",
   "description": "Main content area with #ecf0f5 background, margin-left offset for sidebar, and transition animations.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

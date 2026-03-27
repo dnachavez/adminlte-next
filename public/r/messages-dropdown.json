@@ -4,9 +4,9 @@
   "title": "Messages Dropdown",
   "description": "Navbar dropdown for displaying recent messages with avatar, name, text preview, and timestamp.",
   "registryDependencies": [
-    "adminlte-theme",
-    "adminlte-dropdown",
-    "adminlte-badge"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-dropdown.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-badge.json"
   ],
   "files": [
     {

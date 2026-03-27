@@ -4,7 +4,7 @@
   "title": "useControlSidebar",
   "description": "Hook for right control sidebar slide toggle.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

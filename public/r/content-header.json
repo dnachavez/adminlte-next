@@ -4,7 +4,7 @@
   "title": "Content Header",
   "description": "Page title section with h1 heading, subtitle, and breadcrumb navigation.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

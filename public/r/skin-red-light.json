@@ -4,7 +4,7 @@
   "title": "Skin Red Light",
   "description": "Red skin with light sidebar and red navbar (#dd4b39).",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

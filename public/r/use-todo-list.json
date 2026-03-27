@@ -4,7 +4,7 @@
   "title": "useTodoList",
   "description": "Hook for managing todo list items with check/uncheck toggle and callbacks.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

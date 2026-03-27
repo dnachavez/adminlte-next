@@ -4,7 +4,7 @@
   "title": "AdminLTE Callout",
   "description": "Callout box with colored left border, title, and content for highlighting important information.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

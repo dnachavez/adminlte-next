@@ -4,7 +4,7 @@
   "title": "AdminLTE Users List",
   "description": "Grid of user avatars with names and dates for displaying team members or recent users.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

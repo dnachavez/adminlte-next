@@ -4,7 +4,7 @@
   "title": "AdminLTE Form Controls",
   "description": "Form elements including input, textarea, select with AdminLTE styling, validation states, and form groups.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "useCollapsible",
   "description": "Hook for collapsible box widget with CSS max-height animation (500ms slide toggle).",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

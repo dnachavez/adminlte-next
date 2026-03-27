@@ -4,7 +4,7 @@
   "title": "useDirectChat",
   "description": "Hook for toggling direct chat contacts panel visibility.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Main Footer",
   "description": "Page footer with white background, border-top, and left/right content slots.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "usePushMenu",
   "description": "Hook for sidebar push menu toggle with responsive 767px breakpoint handling.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

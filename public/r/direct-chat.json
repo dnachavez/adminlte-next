@@ -4,9 +4,9 @@
   "title": "Direct Chat",
   "description": "Chat widget with message bubbles (left/right aligned), contacts panel toggle, and message input.",
   "registryDependencies": [
-    "adminlte-theme",
-    "box",
-    "use-direct-chat"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/box.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-direct-chat.json"
   ],
   "files": [
     {

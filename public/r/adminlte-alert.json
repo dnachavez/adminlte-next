@@ -4,7 +4,7 @@
   "title": "AdminLTE Alert",
   "description": "Alert with success/info/warning/danger variants and optional dismissible close button.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Skin Purple",
   "description": "Purple skin for AdminLTE with dark sidebar and purple navbar (#605ca8).",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

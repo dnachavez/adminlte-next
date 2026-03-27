@@ -4,8 +4,8 @@
   "title": "Info Box",
   "description": "Information display widget with colored icon area, text label, number value, and optional progress bar.",
   "registryDependencies": [
-    "adminlte-theme",
-    "adminlte-progress"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-progress.json"
   ],
   "files": [
     {

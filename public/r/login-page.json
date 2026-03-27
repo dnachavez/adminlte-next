@@ -4,10 +4,10 @@
   "title": "Login Page",
   "description": "Authentication login page with email/password form, remember me checkbox, social auth buttons, and links to register/forgot password.",
   "registryDependencies": [
-    "adminlte-theme",
-    "adminlte-form-control",
-    "adminlte-button",
-    "adminlte-checkbox-radio"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-form-control.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-checkbox-radio.json"
   ],
   "files": [
     {

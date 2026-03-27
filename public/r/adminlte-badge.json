@@ -4,7 +4,7 @@
   "title": "AdminLTE Badge",
   "description": "Inline badge with 6 color variants for notification counts and status indicators.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

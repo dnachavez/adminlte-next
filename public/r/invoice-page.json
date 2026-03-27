@@ -4,9 +4,9 @@
   "title": "Invoice Page",
   "description": "Invoice layout with from/to addresses, line items table, subtotal/tax/shipping/total, and print button.",
   "registryDependencies": [
-    "adminlte-theme",
-    "adminlte-table",
-    "adminlte-button"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-table.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json"
   ],
   "files": [
     {

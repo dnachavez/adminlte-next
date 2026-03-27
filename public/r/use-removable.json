@@ -4,7 +4,7 @@
   "title": "useRemovable",
   "description": "Hook for removable box widget with slide-up animation then unmount.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Skin Black Light",
   "description": "Black skin with light sidebar and white navbar with dark text.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

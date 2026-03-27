@@ -4,8 +4,8 @@
   "title": "AdminLTE Modal",
   "description": "Modal dialog with colored header variants (primary/info/success/warning/danger), three sizes, and header/body/footer sections.",
   "registryDependencies": [
-    "adminlte-theme",
-    "adminlte-button"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-button.json"
   ],
   "files": [
     {

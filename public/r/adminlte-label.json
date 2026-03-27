@@ -4,7 +4,7 @@
   "title": "AdminLTE Label",
   "description": "Inline label with 6 color variants for categorization and status display.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

@@ -4,16 +4,16 @@
   "title": "Dashboard Overview",
   "description": "Example dashboard page layout with stats row, main content area, side content, and bottom section.",
   "registryDependencies": [
-    "adminlte-theme",
-    "admin-layout",
-    "box",
-    "small-box",
-    "info-box",
-    "timeline",
-    "todo-list",
-    "direct-chat",
-    "adminlte-chart-placeholder",
-    "adminlte-progress"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/admin-layout.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/box.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/small-box.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/info-box.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/timeline.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/todo-list.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/direct-chat.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-chart-placeholder.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-progress.json"
   ],
   "files": [
     {

@@ -4,7 +4,7 @@
   "title": "Skin Green",
   "description": "Green skin for AdminLTE with dark sidebar and green navbar (#00a65a).",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

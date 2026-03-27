@@ -4,7 +4,7 @@
   "title": "AdminLTE Products List",
   "description": "Vertical list of products with image, name, description, and label for recently added products.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

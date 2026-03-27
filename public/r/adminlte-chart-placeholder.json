@@ -4,7 +4,7 @@
   "title": "AdminLTE Chart Placeholder",
   "description": "Chart container placeholder for line, area, bar, pie, and donut charts with configurable height.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

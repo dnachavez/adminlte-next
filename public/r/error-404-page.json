@@ -4,8 +4,8 @@
   "title": "404 Error Page",
   "description": "404 not found error page with large headline, message, search form, and dashboard link.",
   "registryDependencies": [
-    "adminlte-theme",
-    "adminlte-form-control"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-form-control.json"
   ],
   "files": [
     {

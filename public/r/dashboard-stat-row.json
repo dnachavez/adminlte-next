@@ -4,7 +4,7 @@
   "title": "Dashboard Stat Row",
   "description": "Responsive grid row for SmallBox or InfoBox stat widgets with 2/3/4/6 column layouts.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

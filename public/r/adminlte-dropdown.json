@@ -4,7 +4,7 @@
   "title": "AdminLTE Dropdown",
   "description": "Dropdown menu with trigger element, items, headers, footers, and dividers.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

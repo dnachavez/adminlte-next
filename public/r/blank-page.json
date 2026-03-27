@@ -4,8 +4,8 @@
   "title": "Blank Page",
   "description": "Starter/blank page template with content header, breadcrumbs, and empty box widget.",
   "registryDependencies": [
-    "adminlte-theme",
-    "box"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/box.json"
   ],
   "files": [
     {

@@ -4,8 +4,8 @@
   "title": "Profile Card",
   "description": "User profile card with cover image, avatar, name, role, and stats row in two layout styles.",
   "registryDependencies": [
-    "adminlte-theme",
-    "adminlte-description-block"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-description-block.json"
   ],
   "files": [
     {

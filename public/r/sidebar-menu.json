@@ -4,10 +4,10 @@
   "title": "Sidebar Menu",
   "description": "Sidebar navigation menu with treeview support, section headers, icons, badges, and accordion behavior.",
   "registryDependencies": [
-    "adminlte-theme",
-    "adminlte-badge",
-    "adminlte-label",
-    "use-treeview"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-badge.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-label.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-treeview.json"
   ],
   "files": [
     {

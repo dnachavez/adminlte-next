@@ -4,7 +4,7 @@
   "title": "AdminLTE Tabs",
   "description": "Tab navigation with colored header variants, custom box styling, header tools slot, and top/bottom position.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

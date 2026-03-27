@@ -4,7 +4,7 @@
   "title": "Header Logo",
   "description": "Logo component for the main header with full and mini (collapsed) variants.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

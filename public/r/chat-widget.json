@@ -4,7 +4,7 @@
   "title": "Chat Widget",
   "description": "Simple chat display with message list, avatars, timestamps, and message input.",
   "registryDependencies": [
-    "adminlte-theme"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json"
   ],
   "files": [
     {

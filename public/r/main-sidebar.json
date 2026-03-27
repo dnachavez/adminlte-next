@@ -4,11 +4,11 @@
   "title": "Main Sidebar",
   "description": "Left sidebar with 230px width, themed colors, collapse/expand transitions, and mobile responsive behavior.",
   "registryDependencies": [
-    "adminlte-theme",
-    "sidebar-menu",
-    "sidebar-user-panel",
-    "sidebar-search-form",
-    "use-push-menu"
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/adminlte-theme.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/sidebar-menu.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/sidebar-user-panel.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/sidebar-search-form.json",
+    "https://raw.githubusercontent.com/dnachavez/adminlte-next/master/public/r/use-push-menu.json"
   ],
   "files": [
     {
