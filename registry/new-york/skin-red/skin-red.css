@@ -1,0 +1,20 @@
+.skin-red {
+  --adminlte-skin-navbar-bg: #dd4b39;
+  --adminlte-skin-navbar-color: #ffffff;
+  --adminlte-skin-logo-bg: #d73925;
+  --adminlte-skin-logo-color: #ffffff;
+  --adminlte-skin-logo-hover-bg: #d33724;
+  --adminlte-skin-sidebar-bg: #222d32;
+  --adminlte-skin-sidebar-color: #b8c7ce;
+  --adminlte-skin-sidebar-hover-bg: #1e282c;
+  --adminlte-skin-sidebar-hover-color: #ffffff;
+  --adminlte-skin-sidebar-active-border: #dd4b39;
+  --adminlte-skin-sidebar-active-bg: #1e282c;
+  --adminlte-skin-sidebar-active-color: #ffffff;
+  --adminlte-skin-sidebar-submenu-bg: #2c3b41;
+  --adminlte-skin-sidebar-submenu-color: #8aa4af;
+  --adminlte-skin-sidebar-submenu-hover-color: #ffffff;
+  --adminlte-skin-sidebar-header-bg: #1a2226;
+  --adminlte-skin-sidebar-header-color: #4b646f;
+  --adminlte-skin-user-panel-color: #ffffff;
+}

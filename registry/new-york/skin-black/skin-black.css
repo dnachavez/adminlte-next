@@ -1,0 +1,21 @@
+.skin-black {
+  --adminlte-skin-navbar-bg: #ffffff;
+  --adminlte-skin-navbar-color: #333333;
+  --adminlte-skin-navbar-border: 1px solid #d2d6de;
+  --adminlte-skin-logo-bg: #ffffff;
+  --adminlte-skin-logo-color: #333333;
+  --adminlte-skin-logo-hover-bg: #fcfcfc;
+  --adminlte-skin-sidebar-bg: #222d32;
+  --adminlte-skin-sidebar-color: #b8c7ce;
+  --adminlte-skin-sidebar-hover-bg: #1e282c;
+  --adminlte-skin-sidebar-hover-color: #ffffff;
+  --adminlte-skin-sidebar-active-border: #444444;
+  --adminlte-skin-sidebar-active-bg: #1e282c;
+  --adminlte-skin-sidebar-active-color: #ffffff;
+  --adminlte-skin-sidebar-submenu-bg: #2c3b41;
+  --adminlte-skin-sidebar-submenu-color: #8aa4af;
+  --adminlte-skin-sidebar-submenu-hover-color: #ffffff;
+  --adminlte-skin-sidebar-header-bg: #1a2226;
+  --adminlte-skin-sidebar-header-color: #4b646f;
+  --adminlte-skin-user-panel-color: #ffffff;
+}

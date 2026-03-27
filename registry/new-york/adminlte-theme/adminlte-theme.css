@@ -1,0 +1,87 @@
+@layer base {
+  :root {
+    /* AdminLTE Color Palette */
+    --adminlte-aqua: #00c0ef;
+    --adminlte-aqua-active: #00a7d0;
+    --adminlte-red: #dd4b39;
+    --adminlte-red-active: #d33724;
+    --adminlte-green: #00a65a;
+    --adminlte-green-active: #008d4c;
+    --adminlte-yellow: #f39c12;
+    --adminlte-yellow-active: #db8b0b;
+    --adminlte-blue: #0073b7;
+    --adminlte-blue-active: #005384;
+    --adminlte-light-blue: #3c8dbc;
+    --adminlte-light-blue-active: #357ca5;
+    --adminlte-navy: #001f3f;
+    --adminlte-navy-active: #001a35;
+    --adminlte-teal: #39cccc;
+    --adminlte-teal-active: #30bbbb;
+    --adminlte-olive: #3d9970;
+    --adminlte-olive-active: #368763;
+    --adminlte-lime: #01ff70;
+    --adminlte-lime-active: #00e765;
+    --adminlte-orange: #ff851b;
+    --adminlte-orange-active: #ff7701;
+    --adminlte-fuchsia: #f012be;
+    --adminlte-fuchsia-active: #db0ead;
+    --adminlte-purple: #605ca8;
+    --adminlte-purple-active: #555299;
+    --adminlte-maroon: #d81b60;
+    --adminlte-maroon-active: #ca195a;
+    --adminlte-black: #111111;
+    --adminlte-black-active: #000000;
+    --adminlte-gray: #d2d6de;
+    --adminlte-gray-active: #b5bbc8;
+
+    /* Layout */
+    --adminlte-sidebar-width: 230px;
+    --adminlte-sidebar-mini-width: 50px;
+    --adminlte-navbar-height: 50px;
+    --adminlte-content-bg: #ecf0f5;
+    --adminlte-footer-bg: #ffffff;
+    --adminlte-footer-border: #d2d6de;
+    --adminlte-footer-color: #444444;
+    --adminlte-body-font-size: 14px;
+
+    /* Box Widget */
+    --adminlte-box-border-radius: 3px;
+    --adminlte-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    --adminlte-box-border-top-width: 3px;
+    --adminlte-box-padding: 10px;
+    --adminlte-box-margin-bottom: 20px;
+    --adminlte-box-header-border: #f4f4f4;
+    --adminlte-box-bg: #ffffff;
+    --adminlte-box-default-border: #d2d6de;
+    --adminlte-box-primary-border: #3c8dbc;
+    --adminlte-box-info-border: #00c0ef;
+    --adminlte-box-success-border: #00a65a;
+    --adminlte-box-warning-border: #f39c12;
+    --adminlte-box-danger-border: #dd4b39;
+
+    /* Skin Variables (defaults to skin-blue) */
+    --adminlte-skin-navbar-bg: #3c8dbc;
+    --adminlte-skin-navbar-color: #ffffff;
+    --adminlte-skin-logo-bg: #367fa9;
+    --adminlte-skin-logo-color: #ffffff;
+    --adminlte-skin-logo-hover-bg: #357ca5;
+    --adminlte-skin-sidebar-bg: #222d32;
+    --adminlte-skin-sidebar-color: #b8c7ce;
+    --adminlte-skin-sidebar-hover-bg: #1e282c;
+    --adminlte-skin-sidebar-hover-color: #ffffff;
+    --adminlte-skin-sidebar-active-border: #3c8dbc;
+    --adminlte-skin-sidebar-active-bg: #1e282c;
+    --adminlte-skin-sidebar-active-color: #ffffff;
+    --adminlte-skin-sidebar-submenu-bg: #2c3b41;
+    --adminlte-skin-sidebar-submenu-color: #8aa4af;
+    --adminlte-skin-sidebar-submenu-hover-color: #ffffff;
+    --adminlte-skin-sidebar-header-bg: #1a2226;
+    --adminlte-skin-sidebar-header-color: #4b646f;
+    --adminlte-skin-user-panel-color: #ffffff;
+
+    /* Transitions */
+    --adminlte-transition-speed: 0.3s;
+    --adminlte-animation-speed: 500ms;
+    --adminlte-transition-fn: ease-in-out;
+  }
+}
